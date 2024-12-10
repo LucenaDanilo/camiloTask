@@ -1,0 +1,1237 @@
+[2024-12-09 21:25:24] INFO     [__main__:<module>:19] === Iniciando Aplicação ===
+[2024-12-09 21:25:24] INFO     [__main__:<module>:20] Working Directory: /home/danilo/Camilo/camiloTask
+[2024-12-09 21:25:24] INFO     [__main__:<module>:23] === Configurações do Ambiente ===
+[2024-12-09 21:25:24] INFO     [__main__:<module>:24] Sistema Operacional: posix
+[2024-12-09 21:25:24] INFO     [__main__:<module>:25] Plataforma: linux
+[2024-12-09 21:25:24] INFO     [__main__:<module>:26] Versão Python: 3.12.3 (main, Nov  6 2024, 18:32:19) [GCC 13.2.0]
+[2024-12-09 21:25:24] INFO     [__main__:<module>:27] Encoding do Sistema: utf-8
+[2024-12-09 21:25:24] INFO     [__main__:<module>:38] === Variáveis de Ambiente ===
+[2024-12-09 21:25:24] INFO     [__main__:<module>:40] PYTHONPATH: não definido
+[2024-12-09 21:25:24] INFO     [__main__:<module>:40] FLASK_DEBUG: não definido
+[2024-12-09 21:25:24] INFO     [__main__:<module>:40] FLASK_APP: não definido
+[2024-12-09 21:25:24] INFO     [__main__:<module>:40] FLASK_ENV: não definido
+[2024-12-09 21:25:24] INFO     [__main__:<module>:40] GOOGLE_CREDENTIALS_PATH: não definido
+[2024-12-09 21:25:24] ERROR    [__main__:<module>:83] ✗ GOOGLE_CREDENTIALS_PATH não definido no arquivo .env
+[2024-12-09 21:25:24] ERROR    [__main__:<module>:109] ✗ PYTHONPATH não definido no arquivo .env
+[2024-12-09 21:25:24] INFO     [__main__:<module>:118] Debug mode: False
+[2024-12-09 21:25:24] INFO     [__main__:<module>:200] Iniciando servidor Flask em 0.0.0.0:5002
+[2024-12-09 21:25:24] INFO     [__main__:<module>:201] Debug mode: False
+[2024-12-09 21:25:24] INFO     [werkzeug:_log:97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.15.8:5002
+[2024-12-09 21:25:24] INFO     [werkzeug:_log:97] [33mPress CTRL+C to quit[0m
+[2024-12-09 21:25:33] INFO     [__main__:index:126] Iniciando carregamento do dashboard
+[2024-12-09 21:25:33] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:25:33] "GET / HTTP/1.1" 200 -
+[2024-12-09 21:25:33] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:25:33] "GET /static/css/charts.css HTTP/1.1" 200 -
+[2024-12-09 21:25:33] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:25:33] "GET /static/js/chart-utils.js HTTP/1.1" 200 -
+[2024-12-09 21:25:33] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:25:33] "GET /static/css/style.css HTTP/1.1" 200 -
+[2024-12-09 21:25:33] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:25:33] "GET /static/css/table.css HTTP/1.1" 200 -
+[2024-12-09 21:25:33] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:25:33] "GET /static/js/color-palette.js HTTP/1.1" 200 -
+[2024-12-09 21:25:33] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:25:33] "GET /static/css/filters.css HTTP/1.1" 200 -
+[2024-12-09 21:25:33] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:25:33] "GET /static/js/data.js HTTP/1.1" 200 -
+[2024-12-09 21:25:33] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:25:33] "GET /static/js/table.js HTTP/1.1" 200 -
+[2024-12-09 21:25:33] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:25:33] "GET /static/js/filters.js HTTP/1.1" 200 -
+[2024-12-09 21:25:33] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:25:33] "GET /static/js/charts.js HTTP/1.1" 200 -
+[2024-12-09 21:25:33] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:25:33] "GET /static/js/dashboard.js HTTP/1.1" 200 -
+[2024-12-09 21:25:33] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:25:33] "GET /static/js/updater.js HTTP/1.1" 200 -
+[2024-12-09 21:25:34] INFO     [__main__:get_data:140] === Iniciando carregamento de dados via API ===
+[2024-12-09 21:25:34] INFO     [__main__:get_data:142] Inicializando Google Sheets Client
+[2024-12-09 21:25:34] INFO     [src.core.sheets_client:__init__:30] === Inicializando Google Sheets Client ===
+[2024-12-09 21:25:34] INFO     [src.core.sheets_client:__init__:35] ********{'credentials_path': 'credentials.json', 'sheet_url': None, 'scopes': ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive'], 'default_range': 'Sheet1!A1:Z1000', 'update_interval': 300, 'timezone': zoneinfo.ZoneInfo(key='America/Sao_Paulo'), 'date_format': '%d/%m/%Y %H:%M:%S', 'default_start_time': '00:00:00', 'default_end_time': '23:59:59.999999'}
+[2024-12-09 21:25:34] INFO     [src.core.sheets_client:__init__:36] Configurações carregadas:
+[2024-12-09 21:25:34] INFO     [src.core.sheets_client:__init__:39] credentials_path: credentials.json
+[2024-12-09 21:25:34] INFO     [src.core.sheets_client:__init__:39] sheet_url: None
+[2024-12-09 21:25:34] INFO     [src.core.sheets_client:__init__:39] default_range: Sheet1!A1:Z1000
+[2024-12-09 21:25:34] INFO     [src.core.sheets_client:__init__:39] update_interval: 300
+[2024-12-09 21:25:34] INFO     [src.core.sheets_client:__init__:39] timezone: America/Sao_Paulo
+[2024-12-09 21:25:34] INFO     [src.core.sheets_client:__init__:39] date_format: %d/%m/%Y %H:%M:%S
+[2024-12-09 21:25:34] INFO     [src.core.sheets_client:__init__:39] default_start_time: 00:00:00
+[2024-12-09 21:25:34] INFO     [src.core.sheets_client:__init__:39] default_end_time: 23:59:59.999999
+[2024-12-09 21:25:34] INFO     [src.core.sheets_client:_get_credentials:60] Tentando carregar credenciais de: credentials.json
+[2024-12-09 21:25:34] CRITICAL [src.core.sheets_client:_get_credentials:64] Arquivo de credenciais não encontrado em: credentials.json
+[2024-12-09 21:25:34] ERROR    [src.core.sheets_client:_get_credentials:106] Erro ao obter credenciais: Arquivo de credenciais não encontrado em: credentials.json
+[2024-12-09 21:25:34] ERROR    [src.core.sheets_client:_get_credentials:107] Stack trace:
+[2024-12-09 21:25:34] ERROR    [src.core.sheets_client:_get_credentials:108] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 65, in _get_credentials
+    raise FileNotFoundError(error_msg)
+FileNotFoundError: Arquivo de credenciais não encontrado em: credentials.json
+
+[2024-12-09 21:25:34] ERROR    [src.core.sheets_client:__init__:49] Erro ao inicializar GoogleSheetsClient:
+[2024-12-09 21:25:34] ERROR    [src.core.sheets_client:__init__:50] Tipo do erro: FileNotFoundError
+[2024-12-09 21:25:34] ERROR    [src.core.sheets_client:__init__:51] Mensagem: Arquivo de credenciais não encontrado em: credentials.json
+[2024-12-09 21:25:34] ERROR    [src.core.sheets_client:__init__:52] Stack trace:
+[2024-12-09 21:25:34] ERROR    [src.core.sheets_client:__init__:53] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 42, in __init__
+    self.credentials = self._get_credentials()
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 65, in _get_credentials
+    raise FileNotFoundError(error_msg)
+FileNotFoundError: Arquivo de credenciais não encontrado em: credentials.json
+
+[2024-12-09 21:25:34] ERROR    [__main__:get_data:147] ✗ Erro ao inicializar Google Sheets Client
+[2024-12-09 21:25:34] ERROR    [__main__:get_data:148] Detalhes do erro: Arquivo de credenciais não encontrado em: credentials.json
+[2024-12-09 21:25:34] ERROR    [__main__:get_data:149] Stack trace:
+[2024-12-09 21:25:34] ERROR    [__main__:get_data:150] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/app.py", line 144, in get_data
+    sheets_client = GoogleSheetsClient()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 42, in __init__
+    self.credentials = self._get_credentials()
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 65, in _get_credentials
+    raise FileNotFoundError(error_msg)
+FileNotFoundError: Arquivo de credenciais não encontrado em: credentials.json
+
+[2024-12-09 21:25:34] ERROR    [__main__:get_data:184] === Erro na rota /api/data ===
+[2024-12-09 21:25:34] ERROR    [__main__:get_data:185] Tipo do erro: FileNotFoundError
+[2024-12-09 21:25:34] ERROR    [__main__:get_data:186] Mensagem do erro: Arquivo de credenciais não encontrado em: credentials.json
+[2024-12-09 21:25:34] ERROR    [__main__:get_data:187] Stack trace completo:
+[2024-12-09 21:25:34] ERROR    [__main__:get_data:188] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/app.py", line 144, in get_data
+    sheets_client = GoogleSheetsClient()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 42, in __init__
+    self.credentials = self._get_credentials()
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 65, in _get_credentials
+    raise FileNotFoundError(error_msg)
+FileNotFoundError: Arquivo de credenciais não encontrado em: credentials.json
+
+[2024-12-09 21:25:34] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:25:34] "[35m[1mGET /api/data HTTP/1.1[0m" 500 -
+[2024-12-09 21:25:34] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:25:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-12-09 21:27:04] INFO     [__main__:index:126] Iniciando carregamento do dashboard
+[2024-12-09 21:27:04] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:27:04] "GET / HTTP/1.1" 200 -
+[2024-12-09 21:27:04] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:27:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:27:04] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:27:04] "[36mGET /static/css/table.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:27:04] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:27:04] "[36mGET /static/css/charts.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:27:04] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:27:04] "[36mGET /static/css/filters.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:27:04] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:27:04] "[36mGET /static/js/chart-utils.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:27:04] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:27:04] "[36mGET /static/js/color-palette.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:27:04] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:27:04] "[36mGET /static/js/data.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:27:04] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:27:04] "[36mGET /static/js/table.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:27:04] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:27:04] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:27:04] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:27:04] "[36mGET /static/js/filters.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:27:04] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:27:04] "[36mGET /static/js/updater.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:27:04] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:27:04] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:27:05] INFO     [__main__:get_data:140] === Iniciando carregamento de dados via API ===
+[2024-12-09 21:27:05] INFO     [__main__:get_data:142] Inicializando Google Sheets Client
+[2024-12-09 21:27:05] INFO     [src.core.sheets_client:__init__:30] === Inicializando Google Sheets Client ===
+[2024-12-09 21:27:05] INFO     [src.core.sheets_client:__init__:35] ********{'credentials_path': 'credentials.json', 'sheet_url': None, 'scopes': ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive'], 'default_range': 'Sheet1!A1:Z1000', 'update_interval': 300, 'timezone': zoneinfo.ZoneInfo(key='America/Sao_Paulo'), 'date_format': '%d/%m/%Y %H:%M:%S', 'default_start_time': '00:00:00', 'default_end_time': '23:59:59.999999'}
+[2024-12-09 21:27:05] INFO     [src.core.sheets_client:__init__:36] Configurações carregadas:
+[2024-12-09 21:27:05] INFO     [src.core.sheets_client:__init__:39] credentials_path: credentials.json
+[2024-12-09 21:27:05] INFO     [src.core.sheets_client:__init__:39] sheet_url: None
+[2024-12-09 21:27:05] INFO     [src.core.sheets_client:__init__:39] default_range: Sheet1!A1:Z1000
+[2024-12-09 21:27:05] INFO     [src.core.sheets_client:__init__:39] update_interval: 300
+[2024-12-09 21:27:05] INFO     [src.core.sheets_client:__init__:39] timezone: America/Sao_Paulo
+[2024-12-09 21:27:05] INFO     [src.core.sheets_client:__init__:39] date_format: %d/%m/%Y %H:%M:%S
+[2024-12-09 21:27:05] INFO     [src.core.sheets_client:__init__:39] default_start_time: 00:00:00
+[2024-12-09 21:27:05] INFO     [src.core.sheets_client:__init__:39] default_end_time: 23:59:59.999999
+[2024-12-09 21:27:05] INFO     [src.core.sheets_client:_get_credentials:60] Tentando carregar credenciais de: credentials.json
+[2024-12-09 21:27:05] CRITICAL [src.core.sheets_client:_get_credentials:64] Arquivo de credenciais não encontrado em: credentials.json
+[2024-12-09 21:27:05] ERROR    [src.core.sheets_client:_get_credentials:106] Erro ao obter credenciais: Arquivo de credenciais não encontrado em: credentials.json
+[2024-12-09 21:27:05] ERROR    [src.core.sheets_client:_get_credentials:107] Stack trace:
+[2024-12-09 21:27:05] ERROR    [src.core.sheets_client:_get_credentials:108] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 65, in _get_credentials
+    raise FileNotFoundError(error_msg)
+FileNotFoundError: Arquivo de credenciais não encontrado em: credentials.json
+
+[2024-12-09 21:27:05] ERROR    [src.core.sheets_client:__init__:49] Erro ao inicializar GoogleSheetsClient:
+[2024-12-09 21:27:05] ERROR    [src.core.sheets_client:__init__:50] Tipo do erro: FileNotFoundError
+[2024-12-09 21:27:05] ERROR    [src.core.sheets_client:__init__:51] Mensagem: Arquivo de credenciais não encontrado em: credentials.json
+[2024-12-09 21:27:05] ERROR    [src.core.sheets_client:__init__:52] Stack trace:
+[2024-12-09 21:27:05] ERROR    [src.core.sheets_client:__init__:53] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 42, in __init__
+    self.credentials = self._get_credentials()
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 65, in _get_credentials
+    raise FileNotFoundError(error_msg)
+FileNotFoundError: Arquivo de credenciais não encontrado em: credentials.json
+
+[2024-12-09 21:27:05] ERROR    [__main__:get_data:147] ✗ Erro ao inicializar Google Sheets Client
+[2024-12-09 21:27:05] ERROR    [__main__:get_data:148] Detalhes do erro: Arquivo de credenciais não encontrado em: credentials.json
+[2024-12-09 21:27:05] ERROR    [__main__:get_data:149] Stack trace:
+[2024-12-09 21:27:05] ERROR    [__main__:get_data:150] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/app.py", line 144, in get_data
+    sheets_client = GoogleSheetsClient()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 42, in __init__
+    self.credentials = self._get_credentials()
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 65, in _get_credentials
+    raise FileNotFoundError(error_msg)
+FileNotFoundError: Arquivo de credenciais não encontrado em: credentials.json
+
+[2024-12-09 21:27:05] ERROR    [__main__:get_data:184] === Erro na rota /api/data ===
+[2024-12-09 21:27:05] ERROR    [__main__:get_data:185] Tipo do erro: FileNotFoundError
+[2024-12-09 21:27:05] ERROR    [__main__:get_data:186] Mensagem do erro: Arquivo de credenciais não encontrado em: credentials.json
+[2024-12-09 21:27:05] ERROR    [__main__:get_data:187] Stack trace completo:
+[2024-12-09 21:27:05] ERROR    [__main__:get_data:188] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/app.py", line 144, in get_data
+    sheets_client = GoogleSheetsClient()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 42, in __init__
+    self.credentials = self._get_credentials()
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 65, in _get_credentials
+    raise FileNotFoundError(error_msg)
+FileNotFoundError: Arquivo de credenciais não encontrado em: credentials.json
+
+[2024-12-09 21:27:05] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:27:05] "[35m[1mGET /api/data HTTP/1.1[0m" 500 -
+[2024-12-09 21:27:09] INFO     [__main__:index:126] Iniciando carregamento do dashboard
+[2024-12-09 21:27:09] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:27:09] "GET / HTTP/1.1" 200 -
+[2024-12-09 21:27:10] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:27:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:27:10] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:27:10] "[36mGET /static/css/table.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:27:10] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:27:10] "[36mGET /static/css/charts.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:27:10] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:27:10] "[36mGET /static/css/filters.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:27:10] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:27:10] "[36mGET /static/js/chart-utils.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:27:10] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:27:10] "[36mGET /static/js/color-palette.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:27:10] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:27:10] "[36mGET /static/js/data.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:27:10] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:27:10] "[36mGET /static/js/table.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:27:10] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:27:10] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:27:10] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:27:10] "[36mGET /static/js/updater.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:27:10] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:27:10] "[36mGET /static/js/filters.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:27:10] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:27:10] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:27:10] INFO     [__main__:get_data:140] === Iniciando carregamento de dados via API ===
+[2024-12-09 21:27:10] INFO     [__main__:get_data:142] Inicializando Google Sheets Client
+[2024-12-09 21:27:10] INFO     [src.core.sheets_client:__init__:30] === Inicializando Google Sheets Client ===
+[2024-12-09 21:27:10] INFO     [src.core.sheets_client:__init__:35] ********{'credentials_path': 'credentials.json', 'sheet_url': None, 'scopes': ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive'], 'default_range': 'Sheet1!A1:Z1000', 'update_interval': 300, 'timezone': zoneinfo.ZoneInfo(key='America/Sao_Paulo'), 'date_format': '%d/%m/%Y %H:%M:%S', 'default_start_time': '00:00:00', 'default_end_time': '23:59:59.999999'}
+[2024-12-09 21:27:10] INFO     [src.core.sheets_client:__init__:36] Configurações carregadas:
+[2024-12-09 21:27:10] INFO     [src.core.sheets_client:__init__:39] credentials_path: credentials.json
+[2024-12-09 21:27:10] INFO     [src.core.sheets_client:__init__:39] sheet_url: None
+[2024-12-09 21:27:10] INFO     [src.core.sheets_client:__init__:39] default_range: Sheet1!A1:Z1000
+[2024-12-09 21:27:10] INFO     [src.core.sheets_client:__init__:39] update_interval: 300
+[2024-12-09 21:27:10] INFO     [src.core.sheets_client:__init__:39] timezone: America/Sao_Paulo
+[2024-12-09 21:27:10] INFO     [src.core.sheets_client:__init__:39] date_format: %d/%m/%Y %H:%M:%S
+[2024-12-09 21:27:10] INFO     [src.core.sheets_client:__init__:39] default_start_time: 00:00:00
+[2024-12-09 21:27:10] INFO     [src.core.sheets_client:__init__:39] default_end_time: 23:59:59.999999
+[2024-12-09 21:27:10] INFO     [src.core.sheets_client:_get_credentials:60] Tentando carregar credenciais de: credentials.json
+[2024-12-09 21:27:10] CRITICAL [src.core.sheets_client:_get_credentials:64] Arquivo de credenciais não encontrado em: credentials.json
+[2024-12-09 21:27:10] ERROR    [src.core.sheets_client:_get_credentials:106] Erro ao obter credenciais: Arquivo de credenciais não encontrado em: credentials.json
+[2024-12-09 21:27:10] ERROR    [src.core.sheets_client:_get_credentials:107] Stack trace:
+[2024-12-09 21:27:10] ERROR    [src.core.sheets_client:_get_credentials:108] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 65, in _get_credentials
+    raise FileNotFoundError(error_msg)
+FileNotFoundError: Arquivo de credenciais não encontrado em: credentials.json
+
+[2024-12-09 21:27:10] ERROR    [src.core.sheets_client:__init__:49] Erro ao inicializar GoogleSheetsClient:
+[2024-12-09 21:27:10] ERROR    [src.core.sheets_client:__init__:50] Tipo do erro: FileNotFoundError
+[2024-12-09 21:27:10] ERROR    [src.core.sheets_client:__init__:51] Mensagem: Arquivo de credenciais não encontrado em: credentials.json
+[2024-12-09 21:27:10] ERROR    [src.core.sheets_client:__init__:52] Stack trace:
+[2024-12-09 21:27:10] ERROR    [src.core.sheets_client:__init__:53] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 42, in __init__
+    self.credentials = self._get_credentials()
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 65, in _get_credentials
+    raise FileNotFoundError(error_msg)
+FileNotFoundError: Arquivo de credenciais não encontrado em: credentials.json
+
+[2024-12-09 21:27:10] ERROR    [__main__:get_data:147] ✗ Erro ao inicializar Google Sheets Client
+[2024-12-09 21:27:10] ERROR    [__main__:get_data:148] Detalhes do erro: Arquivo de credenciais não encontrado em: credentials.json
+[2024-12-09 21:27:10] ERROR    [__main__:get_data:149] Stack trace:
+[2024-12-09 21:27:10] ERROR    [__main__:get_data:150] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/app.py", line 144, in get_data
+    sheets_client = GoogleSheetsClient()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 42, in __init__
+    self.credentials = self._get_credentials()
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 65, in _get_credentials
+    raise FileNotFoundError(error_msg)
+FileNotFoundError: Arquivo de credenciais não encontrado em: credentials.json
+
+[2024-12-09 21:27:10] ERROR    [__main__:get_data:184] === Erro na rota /api/data ===
+[2024-12-09 21:27:10] ERROR    [__main__:get_data:185] Tipo do erro: FileNotFoundError
+[2024-12-09 21:27:10] ERROR    [__main__:get_data:186] Mensagem do erro: Arquivo de credenciais não encontrado em: credentials.json
+[2024-12-09 21:27:10] ERROR    [__main__:get_data:187] Stack trace completo:
+[2024-12-09 21:27:10] ERROR    [__main__:get_data:188] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/app.py", line 144, in get_data
+    sheets_client = GoogleSheetsClient()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 42, in __init__
+    self.credentials = self._get_credentials()
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 65, in _get_credentials
+    raise FileNotFoundError(error_msg)
+FileNotFoundError: Arquivo de credenciais não encontrado em: credentials.json
+
+[2024-12-09 21:27:10] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:27:10] "[35m[1mGET /api/data HTTP/1.1[0m" 500 -
+[2024-12-09 21:32:01] INFO     [__main__:index:126] Iniciando carregamento do dashboard
+[2024-12-09 21:32:01] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:01] "GET / HTTP/1.1" 200 -
+[2024-12-09 21:32:01] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:01] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:01] "[36mGET /static/css/table.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:01] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:01] "[36mGET /static/css/charts.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:01] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:01] "[36mGET /static/css/filters.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:01] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:01] "[36mGET /static/js/chart-utils.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:01] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:01] "[36mGET /static/js/data.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:01] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:01] "[36mGET /static/js/color-palette.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:01] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:01] "[36mGET /static/js/table.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:01] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:01] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:01] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:01] "[36mGET /static/js/filters.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:01] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:01] "[36mGET /static/js/updater.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:01] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:01] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:01] INFO     [__main__:get_data:140] === Iniciando carregamento de dados via API ===
+[2024-12-09 21:32:01] INFO     [__main__:get_data:142] Inicializando Google Sheets Client
+[2024-12-09 21:32:01] INFO     [src.core.sheets_client:__init__:30] === Inicializando Google Sheets Client ===
+[2024-12-09 21:32:01] INFO     [src.core.sheets_client:__init__:35] ********{'credentials_path': 'credentials.json', 'sheet_url': None, 'scopes': ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive'], 'default_range': 'Sheet1!A1:Z1000', 'update_interval': 300, 'timezone': zoneinfo.ZoneInfo(key='America/Sao_Paulo'), 'date_format': '%d/%m/%Y %H:%M:%S', 'default_start_time': '00:00:00', 'default_end_time': '23:59:59.999999'}
+[2024-12-09 21:32:01] INFO     [src.core.sheets_client:__init__:36] Configurações carregadas:
+[2024-12-09 21:32:01] INFO     [src.core.sheets_client:__init__:39] credentials_path: credentials.json
+[2024-12-09 21:32:01] INFO     [src.core.sheets_client:__init__:39] sheet_url: None
+[2024-12-09 21:32:01] INFO     [src.core.sheets_client:__init__:39] default_range: Sheet1!A1:Z1000
+[2024-12-09 21:32:01] INFO     [src.core.sheets_client:__init__:39] update_interval: 300
+[2024-12-09 21:32:01] INFO     [src.core.sheets_client:__init__:39] timezone: America/Sao_Paulo
+[2024-12-09 21:32:01] INFO     [src.core.sheets_client:__init__:39] date_format: %d/%m/%Y %H:%M:%S
+[2024-12-09 21:32:01] INFO     [src.core.sheets_client:__init__:39] default_start_time: 00:00:00
+[2024-12-09 21:32:01] INFO     [src.core.sheets_client:__init__:39] default_end_time: 23:59:59.999999
+[2024-12-09 21:32:01] INFO     [src.core.sheets_client:_get_credentials:60] Tentando carregar credenciais de: credentials.json
+[2024-12-09 21:32:01] CRITICAL [src.core.sheets_client:_get_credentials:64] Arquivo de credenciais não encontrado em: credentials.json
+[2024-12-09 21:32:01] ERROR    [src.core.sheets_client:_get_credentials:106] Erro ao obter credenciais: Arquivo de credenciais não encontrado em: credentials.json
+[2024-12-09 21:32:01] ERROR    [src.core.sheets_client:_get_credentials:107] Stack trace:
+[2024-12-09 21:32:01] ERROR    [src.core.sheets_client:_get_credentials:108] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 65, in _get_credentials
+    raise FileNotFoundError(error_msg)
+FileNotFoundError: Arquivo de credenciais não encontrado em: credentials.json
+
+[2024-12-09 21:32:01] ERROR    [src.core.sheets_client:__init__:49] Erro ao inicializar GoogleSheetsClient:
+[2024-12-09 21:32:01] ERROR    [src.core.sheets_client:__init__:50] Tipo do erro: FileNotFoundError
+[2024-12-09 21:32:01] ERROR    [src.core.sheets_client:__init__:51] Mensagem: Arquivo de credenciais não encontrado em: credentials.json
+[2024-12-09 21:32:01] ERROR    [src.core.sheets_client:__init__:52] Stack trace:
+[2024-12-09 21:32:01] ERROR    [src.core.sheets_client:__init__:53] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 42, in __init__
+    self.credentials = self._get_credentials()
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 65, in _get_credentials
+    raise FileNotFoundError(error_msg)
+FileNotFoundError: Arquivo de credenciais não encontrado em: credentials.json
+
+[2024-12-09 21:32:01] ERROR    [__main__:get_data:147] ✗ Erro ao inicializar Google Sheets Client
+[2024-12-09 21:32:01] ERROR    [__main__:get_data:148] Detalhes do erro: Arquivo de credenciais não encontrado em: credentials.json
+[2024-12-09 21:32:01] ERROR    [__main__:get_data:149] Stack trace:
+[2024-12-09 21:32:01] ERROR    [__main__:get_data:150] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/app.py", line 144, in get_data
+    sheets_client = GoogleSheetsClient()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 42, in __init__
+    self.credentials = self._get_credentials()
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 65, in _get_credentials
+    raise FileNotFoundError(error_msg)
+FileNotFoundError: Arquivo de credenciais não encontrado em: credentials.json
+
+[2024-12-09 21:32:01] ERROR    [__main__:get_data:184] === Erro na rota /api/data ===
+[2024-12-09 21:32:01] ERROR    [__main__:get_data:185] Tipo do erro: FileNotFoundError
+[2024-12-09 21:32:01] ERROR    [__main__:get_data:186] Mensagem do erro: Arquivo de credenciais não encontrado em: credentials.json
+[2024-12-09 21:32:01] ERROR    [__main__:get_data:187] Stack trace completo:
+[2024-12-09 21:32:01] ERROR    [__main__:get_data:188] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/app.py", line 144, in get_data
+    sheets_client = GoogleSheetsClient()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 42, in __init__
+    self.credentials = self._get_credentials()
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 65, in _get_credentials
+    raise FileNotFoundError(error_msg)
+FileNotFoundError: Arquivo de credenciais não encontrado em: credentials.json
+
+[2024-12-09 21:32:01] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:01] "[35m[1mGET /api/data HTTP/1.1[0m" 500 -
+[2024-12-09 21:32:09] INFO     [__main__:<module>:19] === Iniciando Aplicação ===
+[2024-12-09 21:32:09] INFO     [__main__:<module>:20] Working Directory: /home/danilo/Camilo/camiloTask
+[2024-12-09 21:32:09] INFO     [__main__:<module>:23] === Configurações do Ambiente ===
+[2024-12-09 21:32:09] INFO     [__main__:<module>:24] Sistema Operacional: posix
+[2024-12-09 21:32:09] INFO     [__main__:<module>:25] Plataforma: linux
+[2024-12-09 21:32:09] INFO     [__main__:<module>:26] Versão Python: 3.12.3 (main, Nov  6 2024, 18:32:19) [GCC 13.2.0]
+[2024-12-09 21:32:09] INFO     [__main__:<module>:27] Encoding do Sistema: utf-8
+[2024-12-09 21:32:09] INFO     [__main__:<module>:38] === Variáveis de Ambiente ===
+[2024-12-09 21:32:09] INFO     [__main__:<module>:40] PYTHONPATH: não definido
+[2024-12-09 21:32:09] INFO     [__main__:<module>:40] FLASK_DEBUG: não definido
+[2024-12-09 21:32:09] INFO     [__main__:<module>:40] FLASK_APP: não definido
+[2024-12-09 21:32:09] INFO     [__main__:<module>:40] FLASK_ENV: não definido
+[2024-12-09 21:32:09] INFO     [__main__:<module>:40] GOOGLE_CREDENTIALS_PATH: não definido
+[2024-12-09 21:32:09] ERROR    [__main__:<module>:83] ✗ GOOGLE_CREDENTIALS_PATH não definido no arquivo .env
+[2024-12-09 21:32:09] ERROR    [__main__:<module>:109] ✗ PYTHONPATH não definido no arquivo .env
+[2024-12-09 21:32:09] INFO     [__main__:<module>:118] Debug mode: False
+[2024-12-09 21:32:09] INFO     [__main__:<module>:200] Iniciando servidor Flask em 0.0.0.0:5002
+[2024-12-09 21:32:09] INFO     [__main__:<module>:201] Debug mode: False
+[2024-12-09 21:32:09] INFO     [werkzeug:_log:97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.15.8:5002
+[2024-12-09 21:32:09] INFO     [werkzeug:_log:97] [33mPress CTRL+C to quit[0m
+[2024-12-09 21:32:12] INFO     [__main__:index:126] Iniciando carregamento do dashboard
+[2024-12-09 21:32:12] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:12] "GET / HTTP/1.1" 200 -
+[2024-12-09 21:32:12] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:12] "[36mGET /static/css/table.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:12] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:12] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:12] "[36mGET /static/css/filters.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:12] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:12] "[36mGET /static/js/chart-utils.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:12] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:12] "[36mGET /static/css/charts.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:12] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:12] "[36mGET /static/js/color-palette.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:12] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:12] "[36mGET /static/js/data.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:12] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:12] "[36mGET /static/js/filters.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:12] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:12] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:12] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:12] "[36mGET /static/js/table.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:12] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:12] "[36mGET /static/js/updater.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:12] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:12] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:12] INFO     [__main__:get_data:140] === Iniciando carregamento de dados via API ===
+[2024-12-09 21:32:12] INFO     [__main__:get_data:142] Inicializando Google Sheets Client
+[2024-12-09 21:32:12] INFO     [src.core.sheets_client:__init__:30] === Inicializando Google Sheets Client ===
+[2024-12-09 21:32:12] INFO     [src.core.sheets_client:__init__:35] ********{'credentials_path': 'credentials.json', 'sheet_url': None, 'scopes': ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive'], 'default_range': 'Sheet1!A1:Z1000', 'update_interval': 300, 'timezone': zoneinfo.ZoneInfo(key='America/Sao_Paulo'), 'date_format': '%d/%m/%Y %H:%M:%S', 'default_start_time': '00:00:00', 'default_end_time': '23:59:59.999999'}
+[2024-12-09 21:32:12] INFO     [src.core.sheets_client:__init__:36] Configurações carregadas:
+[2024-12-09 21:32:12] INFO     [src.core.sheets_client:__init__:39] credentials_path: credentials.json
+[2024-12-09 21:32:12] INFO     [src.core.sheets_client:__init__:39] sheet_url: None
+[2024-12-09 21:32:12] INFO     [src.core.sheets_client:__init__:39] default_range: Sheet1!A1:Z1000
+[2024-12-09 21:32:12] INFO     [src.core.sheets_client:__init__:39] update_interval: 300
+[2024-12-09 21:32:12] INFO     [src.core.sheets_client:__init__:39] timezone: America/Sao_Paulo
+[2024-12-09 21:32:12] INFO     [src.core.sheets_client:__init__:39] date_format: %d/%m/%Y %H:%M:%S
+[2024-12-09 21:32:12] INFO     [src.core.sheets_client:__init__:39] default_start_time: 00:00:00
+[2024-12-09 21:32:12] INFO     [src.core.sheets_client:__init__:39] default_end_time: 23:59:59.999999
+[2024-12-09 21:32:12] INFO     [src.core.sheets_client:_get_credentials:60] Tentando carregar credenciais de: credentials.json
+[2024-12-09 21:32:12] CRITICAL [src.core.sheets_client:_get_credentials:64] Arquivo de credenciais não encontrado em: credentials.json
+[2024-12-09 21:32:12] ERROR    [src.core.sheets_client:_get_credentials:106] Erro ao obter credenciais: Arquivo de credenciais não encontrado em: credentials.json
+[2024-12-09 21:32:12] ERROR    [src.core.sheets_client:_get_credentials:107] Stack trace:
+[2024-12-09 21:32:12] ERROR    [src.core.sheets_client:_get_credentials:108] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 65, in _get_credentials
+    raise FileNotFoundError(error_msg)
+FileNotFoundError: Arquivo de credenciais não encontrado em: credentials.json
+
+[2024-12-09 21:32:12] ERROR    [src.core.sheets_client:__init__:49] Erro ao inicializar GoogleSheetsClient:
+[2024-12-09 21:32:12] ERROR    [src.core.sheets_client:__init__:50] Tipo do erro: FileNotFoundError
+[2024-12-09 21:32:12] ERROR    [src.core.sheets_client:__init__:51] Mensagem: Arquivo de credenciais não encontrado em: credentials.json
+[2024-12-09 21:32:12] ERROR    [src.core.sheets_client:__init__:52] Stack trace:
+[2024-12-09 21:32:12] ERROR    [src.core.sheets_client:__init__:53] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 42, in __init__
+    self.credentials = self._get_credentials()
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 65, in _get_credentials
+    raise FileNotFoundError(error_msg)
+FileNotFoundError: Arquivo de credenciais não encontrado em: credentials.json
+
+[2024-12-09 21:32:12] ERROR    [__main__:get_data:147] ✗ Erro ao inicializar Google Sheets Client
+[2024-12-09 21:32:12] ERROR    [__main__:get_data:148] Detalhes do erro: Arquivo de credenciais não encontrado em: credentials.json
+[2024-12-09 21:32:12] ERROR    [__main__:get_data:149] Stack trace:
+[2024-12-09 21:32:12] ERROR    [__main__:get_data:150] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/app.py", line 144, in get_data
+    sheets_client = GoogleSheetsClient()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 42, in __init__
+    self.credentials = self._get_credentials()
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 65, in _get_credentials
+    raise FileNotFoundError(error_msg)
+FileNotFoundError: Arquivo de credenciais não encontrado em: credentials.json
+
+[2024-12-09 21:32:12] ERROR    [__main__:get_data:184] === Erro na rota /api/data ===
+[2024-12-09 21:32:12] ERROR    [__main__:get_data:185] Tipo do erro: FileNotFoundError
+[2024-12-09 21:32:12] ERROR    [__main__:get_data:186] Mensagem do erro: Arquivo de credenciais não encontrado em: credentials.json
+[2024-12-09 21:32:12] ERROR    [__main__:get_data:187] Stack trace completo:
+[2024-12-09 21:32:12] ERROR    [__main__:get_data:188] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/app.py", line 144, in get_data
+    sheets_client = GoogleSheetsClient()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 42, in __init__
+    self.credentials = self._get_credentials()
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 65, in _get_credentials
+    raise FileNotFoundError(error_msg)
+FileNotFoundError: Arquivo de credenciais não encontrado em: credentials.json
+
+[2024-12-09 21:32:12] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:12] "[35m[1mGET /api/data HTTP/1.1[0m" 500 -
+[2024-12-09 21:32:26] INFO     [__main__:<module>:19] === Iniciando Aplicação ===
+[2024-12-09 21:32:26] INFO     [__main__:<module>:20] Working Directory: /home/danilo/Camilo/camiloTask
+[2024-12-09 21:32:26] INFO     [__main__:<module>:23] === Configurações do Ambiente ===
+[2024-12-09 21:32:26] INFO     [__main__:<module>:24] Sistema Operacional: posix
+[2024-12-09 21:32:26] INFO     [__main__:<module>:25] Plataforma: linux
+[2024-12-09 21:32:26] INFO     [__main__:<module>:26] Versão Python: 3.12.3 (main, Nov  6 2024, 18:32:19) [GCC 13.2.0]
+[2024-12-09 21:32:26] INFO     [__main__:<module>:27] Encoding do Sistema: utf-8
+[2024-12-09 21:32:26] INFO     [__main__:<module>:38] === Variáveis de Ambiente ===
+[2024-12-09 21:32:26] INFO     [__main__:<module>:40] PYTHONPATH: não definido
+[2024-12-09 21:32:26] INFO     [__main__:<module>:40] FLASK_DEBUG: não definido
+[2024-12-09 21:32:26] INFO     [__main__:<module>:40] FLASK_APP: não definido
+[2024-12-09 21:32:26] INFO     [__main__:<module>:40] FLASK_ENV: não definido
+[2024-12-09 21:32:26] INFO     [__main__:<module>:40] GOOGLE_CREDENTIALS_PATH: não definido
+[2024-12-09 21:32:26] ERROR    [__main__:<module>:83] ✗ GOOGLE_CREDENTIALS_PATH não definido no arquivo .env
+[2024-12-09 21:32:26] ERROR    [__main__:<module>:109] ✗ PYTHONPATH não definido no arquivo .env
+[2024-12-09 21:32:26] INFO     [__main__:<module>:118] Debug mode: False
+[2024-12-09 21:32:26] INFO     [__main__:<module>:200] Iniciando servidor Flask em 0.0.0.0:5002
+[2024-12-09 21:32:26] INFO     [__main__:<module>:201] Debug mode: False
+[2024-12-09 21:32:26] INFO     [werkzeug:_log:97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.15.8:5002
+[2024-12-09 21:32:26] INFO     [werkzeug:_log:97] [33mPress CTRL+C to quit[0m
+[2024-12-09 21:32:28] INFO     [__main__:index:126] Iniciando carregamento do dashboard
+[2024-12-09 21:32:28] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:28] "GET / HTTP/1.1" 200 -
+[2024-12-09 21:32:28] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:28] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:28] "[36mGET /static/css/charts.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:28] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:28] "[36mGET /static/js/chart-utils.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:28] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:28] "[36mGET /static/css/filters.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:28] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:28] "[36mGET /static/css/table.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:28] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:28] "[36mGET /static/js/data.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:28] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:28] "[36mGET /static/js/color-palette.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:28] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:28] "[36mGET /static/js/table.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:28] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:28] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:28] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:28] "[36mGET /static/js/filters.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:28] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:28] "[36mGET /static/js/updater.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:28] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:28] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:32:28] INFO     [__main__:get_data:140] === Iniciando carregamento de dados via API ===
+[2024-12-09 21:32:28] INFO     [__main__:get_data:142] Inicializando Google Sheets Client
+[2024-12-09 21:32:28] INFO     [src.core.sheets_client:__init__:30] === Inicializando Google Sheets Client ===
+[2024-12-09 21:32:28] INFO     [src.core.sheets_client:__init__:35] ********{'credentials_path': 'credentials.json', 'sheet_url': None, 'scopes': ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive'], 'default_range': 'Sheet1!A1:Z1000', 'update_interval': 300, 'timezone': zoneinfo.ZoneInfo(key='America/Sao_Paulo'), 'date_format': '%d/%m/%Y %H:%M:%S', 'default_start_time': '00:00:00', 'default_end_time': '23:59:59.999999'}
+[2024-12-09 21:32:28] INFO     [src.core.sheets_client:__init__:36] Configurações carregadas:
+[2024-12-09 21:32:28] INFO     [src.core.sheets_client:__init__:39] credentials_path: credentials.json
+[2024-12-09 21:32:28] INFO     [src.core.sheets_client:__init__:39] sheet_url: None
+[2024-12-09 21:32:28] INFO     [src.core.sheets_client:__init__:39] default_range: Sheet1!A1:Z1000
+[2024-12-09 21:32:28] INFO     [src.core.sheets_client:__init__:39] update_interval: 300
+[2024-12-09 21:32:28] INFO     [src.core.sheets_client:__init__:39] timezone: America/Sao_Paulo
+[2024-12-09 21:32:28] INFO     [src.core.sheets_client:__init__:39] date_format: %d/%m/%Y %H:%M:%S
+[2024-12-09 21:32:28] INFO     [src.core.sheets_client:__init__:39] default_start_time: 00:00:00
+[2024-12-09 21:32:28] INFO     [src.core.sheets_client:__init__:39] default_end_time: 23:59:59.999999
+[2024-12-09 21:32:28] INFO     [src.core.sheets_client:_get_credentials:60] Tentando carregar credenciais de: credentials.json
+[2024-12-09 21:32:28] INFO     [src.core.sheets_client:_get_credentials:71] ✓ Arquivo de credenciais lido: 0 bytes
+[2024-12-09 21:32:28] ERROR    [src.core.sheets_client:_get_credentials:89] ✗ Arquivo não é um JSON válido: Expecting value: line 1 column 1 (char 0)
+[2024-12-09 21:32:28] ERROR    [src.core.sheets_client:_get_credentials:93] ✗ Erro ao ler arquivo: Expecting value: line 1 column 1 (char 0)
+[2024-12-09 21:32:28] ERROR    [src.core.sheets_client:_get_credentials:94] ✗ Permissões do arquivo: 664
+[2024-12-09 21:32:28] ERROR    [src.core.sheets_client:_get_credentials:106] Erro ao obter credenciais: Expecting value: line 1 column 1 (char 0)
+[2024-12-09 21:32:28] ERROR    [src.core.sheets_client:_get_credentials:107] Stack trace:
+[2024-12-09 21:32:28] ERROR    [src.core.sheets_client:_get_credentials:108] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 75, in _get_credentials
+    creds_json = json.loads(credentials_content)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[2024-12-09 21:32:28] ERROR    [src.core.sheets_client:__init__:49] Erro ao inicializar GoogleSheetsClient:
+[2024-12-09 21:32:28] ERROR    [src.core.sheets_client:__init__:50] Tipo do erro: JSONDecodeError
+[2024-12-09 21:32:28] ERROR    [src.core.sheets_client:__init__:51] Mensagem: Expecting value: line 1 column 1 (char 0)
+[2024-12-09 21:32:28] ERROR    [src.core.sheets_client:__init__:52] Stack trace:
+[2024-12-09 21:32:28] ERROR    [src.core.sheets_client:__init__:53] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 42, in __init__
+    self.credentials = self._get_credentials()
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 75, in _get_credentials
+    creds_json = json.loads(credentials_content)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[2024-12-09 21:32:28] ERROR    [__main__:get_data:147] ✗ Erro ao inicializar Google Sheets Client
+[2024-12-09 21:32:28] ERROR    [__main__:get_data:148] Detalhes do erro: Expecting value: line 1 column 1 (char 0)
+[2024-12-09 21:32:28] ERROR    [__main__:get_data:149] Stack trace:
+[2024-12-09 21:32:28] ERROR    [__main__:get_data:150] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/app.py", line 144, in get_data
+    sheets_client = GoogleSheetsClient()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 42, in __init__
+    self.credentials = self._get_credentials()
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 75, in _get_credentials
+    creds_json = json.loads(credentials_content)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[2024-12-09 21:32:28] ERROR    [__main__:get_data:184] === Erro na rota /api/data ===
+[2024-12-09 21:32:28] ERROR    [__main__:get_data:185] Tipo do erro: JSONDecodeError
+[2024-12-09 21:32:28] ERROR    [__main__:get_data:186] Mensagem do erro: Expecting value: line 1 column 1 (char 0)
+[2024-12-09 21:32:28] ERROR    [__main__:get_data:187] Stack trace completo:
+[2024-12-09 21:32:28] ERROR    [__main__:get_data:188] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/app.py", line 144, in get_data
+    sheets_client = GoogleSheetsClient()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 42, in __init__
+    self.credentials = self._get_credentials()
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 75, in _get_credentials
+    creds_json = json.loads(credentials_content)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[2024-12-09 21:32:28] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:32:28] "[35m[1mGET /api/data HTTP/1.1[0m" 500 -
+[2024-12-09 21:42:16] INFO     [__main__:<module>:19] === Iniciando Aplicação ===
+[2024-12-09 21:42:16] INFO     [__main__:<module>:20] Working Directory: /home/danilo/Camilo/camiloTask
+[2024-12-09 21:42:16] INFO     [__main__:<module>:23] === Configurações do Ambiente ===
+[2024-12-09 21:42:16] INFO     [__main__:<module>:24] Sistema Operacional: posix
+[2024-12-09 21:42:16] INFO     [__main__:<module>:25] Plataforma: linux
+[2024-12-09 21:42:16] INFO     [__main__:<module>:26] Versão Python: 3.12.3 (main, Nov  6 2024, 18:32:19) [GCC 13.2.0]
+[2024-12-09 21:42:16] INFO     [__main__:<module>:27] Encoding do Sistema: utf-8
+[2024-12-09 21:42:16] INFO     [__main__:<module>:38] === Variáveis de Ambiente ===
+[2024-12-09 21:42:16] INFO     [__main__:<module>:40] PYTHONPATH: não definido
+[2024-12-09 21:42:16] INFO     [__main__:<module>:40] FLASK_DEBUG: não definido
+[2024-12-09 21:42:16] INFO     [__main__:<module>:40] FLASK_APP: não definido
+[2024-12-09 21:42:16] INFO     [__main__:<module>:40] FLASK_ENV: não definido
+[2024-12-09 21:42:16] INFO     [__main__:<module>:40] GOOGLE_CREDENTIALS_PATH: não definido
+[2024-12-09 21:42:16] ERROR    [__main__:<module>:83] ✗ GOOGLE_CREDENTIALS_PATH não definido no arquivo .env
+[2024-12-09 21:42:16] ERROR    [__main__:<module>:109] ✗ PYTHONPATH não definido no arquivo .env
+[2024-12-09 21:42:16] INFO     [__main__:<module>:118] Debug mode: False
+[2024-12-09 21:42:16] INFO     [__main__:<module>:200] Iniciando servidor Flask em 0.0.0.0:5002
+[2024-12-09 21:42:16] INFO     [__main__:<module>:201] Debug mode: False
+[2024-12-09 21:42:16] INFO     [werkzeug:_log:97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.15.8:5002
+[2024-12-09 21:42:16] INFO     [werkzeug:_log:97] [33mPress CTRL+C to quit[0m
+[2024-12-09 21:42:18] INFO     [__main__:index:126] Iniciando carregamento do dashboard
+[2024-12-09 21:42:18] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:42:18] "GET / HTTP/1.1" 200 -
+[2024-12-09 21:42:18] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:42:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:42:18] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:42:18] "[36mGET /static/css/table.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:42:18] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:42:18] "[36mGET /static/css/charts.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:42:18] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:42:18] "[36mGET /static/css/filters.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:42:18] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:42:18] "[36mGET /static/js/chart-utils.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:42:18] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:42:18] "[36mGET /static/js/color-palette.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:42:18] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:42:18] "[36mGET /static/js/data.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:42:18] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:42:18] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:42:18] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:42:18] "[36mGET /static/js/table.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:42:18] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:42:18] "[36mGET /static/js/filters.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:42:18] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:42:18] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:42:18] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:42:18] "[36mGET /static/js/updater.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:42:18] INFO     [__main__:get_data:140] === Iniciando carregamento de dados via API ===
+[2024-12-09 21:42:18] INFO     [__main__:get_data:142] Inicializando Google Sheets Client
+[2024-12-09 21:42:18] INFO     [src.core.sheets_client:__init__:30] === Inicializando Google Sheets Client ===
+[2024-12-09 21:42:18] INFO     [src.core.sheets_client:__init__:35] ********{'credentials_path': 'credentials.json', 'sheet_url': None, 'scopes': ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive'], 'default_range': 'Sheet1!A1:Z1000', 'update_interval': 300, 'timezone': zoneinfo.ZoneInfo(key='America/Sao_Paulo'), 'date_format': '%d/%m/%Y %H:%M:%S', 'default_start_time': '00:00:00', 'default_end_time': '23:59:59.999999'}
+[2024-12-09 21:42:18] INFO     [src.core.sheets_client:__init__:36] Configurações carregadas:
+[2024-12-09 21:42:18] INFO     [src.core.sheets_client:__init__:39] credentials_path: credentials.json
+[2024-12-09 21:42:18] INFO     [src.core.sheets_client:__init__:39] sheet_url: None
+[2024-12-09 21:42:18] INFO     [src.core.sheets_client:__init__:39] default_range: Sheet1!A1:Z1000
+[2024-12-09 21:42:18] INFO     [src.core.sheets_client:__init__:39] update_interval: 300
+[2024-12-09 21:42:18] INFO     [src.core.sheets_client:__init__:39] timezone: America/Sao_Paulo
+[2024-12-09 21:42:18] INFO     [src.core.sheets_client:__init__:39] date_format: %d/%m/%Y %H:%M:%S
+[2024-12-09 21:42:18] INFO     [src.core.sheets_client:__init__:39] default_start_time: 00:00:00
+[2024-12-09 21:42:18] INFO     [src.core.sheets_client:__init__:39] default_end_time: 23:59:59.999999
+[2024-12-09 21:42:18] INFO     [src.core.sheets_client:_get_credentials:60] Tentando carregar credenciais de: credentials.json
+[2024-12-09 21:42:18] INFO     [src.core.sheets_client:_get_credentials:71] ✓ Arquivo de credenciais lido: 2406 bytes
+[2024-12-09 21:42:18] INFO     [src.core.sheets_client:_get_credentials:76] ✓ Conteúdo do arquivo é um JSON válido
+[2024-12-09 21:42:18] INFO     [src.core.sheets_client:_get_credentials:86] ✓ Todos os campos obrigatórios presentes
+[2024-12-09 21:42:18] INFO     [src.core.sheets_client:_get_credentials:102] ✓ Credenciais carregadas com sucesso
+[2024-12-09 21:42:18] INFO     [src.core.sheets_client:_create_service:114] Criando serviço do Google Sheets
+[2024-12-09 21:42:18] INFO     [googleapiclient.discovery_cache:autodetect:49] file_cache is only supported with oauth2client<4.0.0
+[2024-12-09 21:42:18] INFO     [src.core.sheets_client:_create_service:116] ✓ Serviço do Google Sheets criado com sucesso
+[2024-12-09 21:42:18] ERROR    [src.core.sheets_client:_extract_spreadsheet_id:136] ✗ Erro ao extrair ID da planilha: 'NoneType' object has no attribute 'split'
+[2024-12-09 21:42:18] ERROR    [src.core.sheets_client:_extract_spreadsheet_id:137] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 127, in _extract_spreadsheet_id
+    spreadsheet_id = self.config["sheet_url"].split('/')[5]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+[2024-12-09 21:42:18] ERROR    [src.core.sheets_client:__init__:49] Erro ao inicializar GoogleSheetsClient:
+[2024-12-09 21:42:18] ERROR    [src.core.sheets_client:__init__:50] Tipo do erro: AttributeError
+[2024-12-09 21:42:18] ERROR    [src.core.sheets_client:__init__:51] Mensagem: 'NoneType' object has no attribute 'split'
+[2024-12-09 21:42:18] ERROR    [src.core.sheets_client:__init__:52] Stack trace:
+[2024-12-09 21:42:18] ERROR    [src.core.sheets_client:__init__:53] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 44, in __init__
+    self.spreadsheet_id = self._extract_spreadsheet_id()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 127, in _extract_spreadsheet_id
+    spreadsheet_id = self.config["sheet_url"].split('/')[5]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+[2024-12-09 21:42:18] ERROR    [__main__:get_data:147] ✗ Erro ao inicializar Google Sheets Client
+[2024-12-09 21:42:18] ERROR    [__main__:get_data:148] Detalhes do erro: 'NoneType' object has no attribute 'split'
+[2024-12-09 21:42:18] ERROR    [__main__:get_data:149] Stack trace:
+[2024-12-09 21:42:18] ERROR    [__main__:get_data:150] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/app.py", line 144, in get_data
+    sheets_client = GoogleSheetsClient()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 44, in __init__
+    self.spreadsheet_id = self._extract_spreadsheet_id()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 127, in _extract_spreadsheet_id
+    spreadsheet_id = self.config["sheet_url"].split('/')[5]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+[2024-12-09 21:42:18] ERROR    [__main__:get_data:184] === Erro na rota /api/data ===
+[2024-12-09 21:42:18] ERROR    [__main__:get_data:185] Tipo do erro: AttributeError
+[2024-12-09 21:42:18] ERROR    [__main__:get_data:186] Mensagem do erro: 'NoneType' object has no attribute 'split'
+[2024-12-09 21:42:18] ERROR    [__main__:get_data:187] Stack trace completo:
+[2024-12-09 21:42:18] ERROR    [__main__:get_data:188] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/app.py", line 144, in get_data
+    sheets_client = GoogleSheetsClient()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 44, in __init__
+    self.spreadsheet_id = self._extract_spreadsheet_id()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 127, in _extract_spreadsheet_id
+    spreadsheet_id = self.config["sheet_url"].split('/')[5]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+[2024-12-09 21:42:18] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:42:18] "[35m[1mGET /api/data HTTP/1.1[0m" 500 -
+[2024-12-09 21:44:18] INFO     [__main__:<module>:19] === Iniciando Aplicação ===
+[2024-12-09 21:44:18] INFO     [__main__:<module>:20] Working Directory: /home/danilo/Camilo/camiloTask
+[2024-12-09 21:44:18] INFO     [__main__:<module>:23] === Configurações do Ambiente ===
+[2024-12-09 21:44:18] INFO     [__main__:<module>:24] Sistema Operacional: posix
+[2024-12-09 21:44:18] INFO     [__main__:<module>:25] Plataforma: linux
+[2024-12-09 21:44:18] INFO     [__main__:<module>:26] Versão Python: 3.12.3 (main, Nov  6 2024, 18:32:19) [GCC 13.2.0]
+[2024-12-09 21:44:18] INFO     [__main__:<module>:27] Encoding do Sistema: utf-8
+[2024-12-09 21:44:18] INFO     [__main__:<module>:38] === Variáveis de Ambiente ===
+[2024-12-09 21:44:18] INFO     [__main__:<module>:40] PYTHONPATH: não definido
+[2024-12-09 21:44:18] INFO     [__main__:<module>:40] FLASK_DEBUG: não definido
+[2024-12-09 21:44:18] INFO     [__main__:<module>:40] FLASK_APP: não definido
+[2024-12-09 21:44:18] INFO     [__main__:<module>:40] FLASK_ENV: não definido
+[2024-12-09 21:44:18] INFO     [__main__:<module>:40] GOOGLE_CREDENTIALS_PATH: não definido
+[2024-12-09 21:44:18] ERROR    [__main__:<module>:83] ✗ GOOGLE_CREDENTIALS_PATH não definido no arquivo .env
+[2024-12-09 21:44:18] ERROR    [__main__:<module>:109] ✗ PYTHONPATH não definido no arquivo .env
+[2024-12-09 21:44:18] INFO     [__main__:<module>:118] Debug mode: False
+[2024-12-09 21:44:18] INFO     [__main__:<module>:200] Iniciando servidor Flask em 0.0.0.0:5002
+[2024-12-09 21:44:18] INFO     [__main__:<module>:201] Debug mode: False
+[2024-12-09 21:44:18] INFO     [werkzeug:_log:97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.15.8:5002
+[2024-12-09 21:44:18] INFO     [werkzeug:_log:97] [33mPress CTRL+C to quit[0m
+[2024-12-09 21:44:23] INFO     [__main__:index:126] Iniciando carregamento do dashboard
+[2024-12-09 21:44:23] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:44:23] "GET / HTTP/1.1" 200 -
+[2024-12-09 21:44:23] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:44:23] "[36mGET /static/css/filters.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:44:23] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:44:23] "[36mGET /static/css/table.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:44:23] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:44:23] "[36mGET /static/css/charts.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:44:23] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:44:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:44:23] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:44:23] "[36mGET /static/js/chart-utils.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:44:23] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:44:23] "[36mGET /static/js/color-palette.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:44:23] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:44:23] "[36mGET /static/js/table.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:44:23] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:44:23] "[36mGET /static/js/data.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:44:23] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:44:23] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:44:23] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:44:23] "[36mGET /static/js/filters.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:44:23] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:44:23] "[36mGET /static/js/updater.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:44:23] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:44:23] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:44:23] INFO     [__main__:get_data:140] === Iniciando carregamento de dados via API ===
+[2024-12-09 21:44:23] INFO     [__main__:get_data:142] Inicializando Google Sheets Client
+[2024-12-09 21:44:23] INFO     [src.core.sheets_client:__init__:30] === Inicializando Google Sheets Client ===
+[2024-12-09 21:44:23] INFO     [src.core.sheets_client:__init__:35] ********{'credentials_path': 'credentials.json', 'sheet_url': None, 'scopes': ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive'], 'default_range': 'Sheet1!A1:Z1000', 'update_interval': 300, 'timezone': zoneinfo.ZoneInfo(key='America/Sao_Paulo'), 'date_format': '%d/%m/%Y %H:%M:%S', 'default_start_time': '00:00:00', 'default_end_time': '23:59:59.999999'}
+[2024-12-09 21:44:23] INFO     [src.core.sheets_client:__init__:36] Configurações carregadas:
+[2024-12-09 21:44:23] INFO     [src.core.sheets_client:__init__:39] credentials_path: credentials.json
+[2024-12-09 21:44:23] INFO     [src.core.sheets_client:__init__:39] sheet_url: None
+[2024-12-09 21:44:23] INFO     [src.core.sheets_client:__init__:39] default_range: Sheet1!A1:Z1000
+[2024-12-09 21:44:23] INFO     [src.core.sheets_client:__init__:39] update_interval: 300
+[2024-12-09 21:44:23] INFO     [src.core.sheets_client:__init__:39] timezone: America/Sao_Paulo
+[2024-12-09 21:44:23] INFO     [src.core.sheets_client:__init__:39] date_format: %d/%m/%Y %H:%M:%S
+[2024-12-09 21:44:23] INFO     [src.core.sheets_client:__init__:39] default_start_time: 00:00:00
+[2024-12-09 21:44:23] INFO     [src.core.sheets_client:__init__:39] default_end_time: 23:59:59.999999
+[2024-12-09 21:44:23] INFO     [src.core.sheets_client:_get_credentials:60] Tentando carregar credenciais de: credentials.json
+[2024-12-09 21:44:23] INFO     [src.core.sheets_client:_get_credentials:71] ✓ Arquivo de credenciais lido: 2406 bytes
+[2024-12-09 21:44:23] INFO     [src.core.sheets_client:_get_credentials:76] ✓ Conteúdo do arquivo é um JSON válido
+[2024-12-09 21:44:23] INFO     [src.core.sheets_client:_get_credentials:86] ✓ Todos os campos obrigatórios presentes
+[2024-12-09 21:44:23] INFO     [src.core.sheets_client:_get_credentials:102] ✓ Credenciais carregadas com sucesso
+[2024-12-09 21:44:23] INFO     [src.core.sheets_client:_create_service:114] Criando serviço do Google Sheets
+[2024-12-09 21:44:23] INFO     [googleapiclient.discovery_cache:autodetect:49] file_cache is only supported with oauth2client<4.0.0
+[2024-12-09 21:44:23] INFO     [src.core.sheets_client:_create_service:116] ✓ Serviço do Google Sheets criado com sucesso
+[2024-12-09 21:44:23] ERROR    [src.core.sheets_client:_extract_spreadsheet_id:136] ✗ Erro ao extrair ID da planilha: 'NoneType' object has no attribute 'split'
+[2024-12-09 21:44:23] ERROR    [src.core.sheets_client:_extract_spreadsheet_id:137] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 127, in _extract_spreadsheet_id
+    spreadsheet_id = self.config["sheet_url"].split('/')[5]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+[2024-12-09 21:44:23] ERROR    [src.core.sheets_client:__init__:49] Erro ao inicializar GoogleSheetsClient:
+[2024-12-09 21:44:23] ERROR    [src.core.sheets_client:__init__:50] Tipo do erro: AttributeError
+[2024-12-09 21:44:23] ERROR    [src.core.sheets_client:__init__:51] Mensagem: 'NoneType' object has no attribute 'split'
+[2024-12-09 21:44:23] ERROR    [src.core.sheets_client:__init__:52] Stack trace:
+[2024-12-09 21:44:23] ERROR    [src.core.sheets_client:__init__:53] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 44, in __init__
+    self.spreadsheet_id = self._extract_spreadsheet_id()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 127, in _extract_spreadsheet_id
+    spreadsheet_id = self.config["sheet_url"].split('/')[5]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+[2024-12-09 21:44:23] ERROR    [__main__:get_data:147] ✗ Erro ao inicializar Google Sheets Client
+[2024-12-09 21:44:23] ERROR    [__main__:get_data:148] Detalhes do erro: 'NoneType' object has no attribute 'split'
+[2024-12-09 21:44:23] ERROR    [__main__:get_data:149] Stack trace:
+[2024-12-09 21:44:23] ERROR    [__main__:get_data:150] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/app.py", line 144, in get_data
+    sheets_client = GoogleSheetsClient()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 44, in __init__
+    self.spreadsheet_id = self._extract_spreadsheet_id()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 127, in _extract_spreadsheet_id
+    spreadsheet_id = self.config["sheet_url"].split('/')[5]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+[2024-12-09 21:44:23] ERROR    [__main__:get_data:184] === Erro na rota /api/data ===
+[2024-12-09 21:44:23] ERROR    [__main__:get_data:185] Tipo do erro: AttributeError
+[2024-12-09 21:44:23] ERROR    [__main__:get_data:186] Mensagem do erro: 'NoneType' object has no attribute 'split'
+[2024-12-09 21:44:23] ERROR    [__main__:get_data:187] Stack trace completo:
+[2024-12-09 21:44:23] ERROR    [__main__:get_data:188] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/app.py", line 144, in get_data
+    sheets_client = GoogleSheetsClient()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 44, in __init__
+    self.spreadsheet_id = self._extract_spreadsheet_id()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 127, in _extract_spreadsheet_id
+    spreadsheet_id = self.config["sheet_url"].split('/')[5]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+[2024-12-09 21:44:23] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:44:23] "[35m[1mGET /api/data HTTP/1.1[0m" 500 -
+[2024-12-09 21:46:35] INFO     [__main__:<module>:19] === Iniciando Aplicação ===
+[2024-12-09 21:46:35] INFO     [__main__:<module>:20] Working Directory: /home/danilo/Camilo/camiloTask
+[2024-12-09 21:46:35] INFO     [__main__:<module>:23] === Configurações do Ambiente ===
+[2024-12-09 21:46:35] INFO     [__main__:<module>:24] Sistema Operacional: posix
+[2024-12-09 21:46:35] INFO     [__main__:<module>:25] Plataforma: linux
+[2024-12-09 21:46:35] INFO     [__main__:<module>:26] Versão Python: 3.12.3 (main, Nov  6 2024, 18:32:19) [GCC 13.2.0]
+[2024-12-09 21:46:35] INFO     [__main__:<module>:27] Encoding do Sistema: utf-8
+[2024-12-09 21:46:35] INFO     [__main__:<module>:38] === Variáveis de Ambiente ===
+[2024-12-09 21:46:35] INFO     [__main__:<module>:40] PYTHONPATH: não definido
+[2024-12-09 21:46:35] INFO     [__main__:<module>:40] FLASK_DEBUG: não definido
+[2024-12-09 21:46:35] INFO     [__main__:<module>:40] FLASK_APP: não definido
+[2024-12-09 21:46:35] INFO     [__main__:<module>:40] FLASK_ENV: não definido
+[2024-12-09 21:46:35] INFO     [__main__:<module>:40] GOOGLE_CREDENTIALS_PATH: não definido
+[2024-12-09 21:46:35] ERROR    [__main__:<module>:83] ✗ GOOGLE_CREDENTIALS_PATH não definido no arquivo .env
+[2024-12-09 21:46:35] ERROR    [__main__:<module>:109] ✗ PYTHONPATH não definido no arquivo .env
+[2024-12-09 21:46:35] INFO     [__main__:<module>:118] Debug mode: False
+[2024-12-09 21:46:35] INFO     [__main__:<module>:200] Iniciando servidor Flask em 0.0.0.0:5002
+[2024-12-09 21:46:35] INFO     [__main__:<module>:201] Debug mode: False
+[2024-12-09 21:46:35] INFO     [werkzeug:_log:97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.15.8:5002
+[2024-12-09 21:46:35] INFO     [werkzeug:_log:97] [33mPress CTRL+C to quit[0m
+[2024-12-09 21:46:37] INFO     [__main__:index:126] Iniciando carregamento do dashboard
+[2024-12-09 21:46:37] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:46:37] "GET / HTTP/1.1" 200 -
+[2024-12-09 21:46:37] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:46:37] "[36mGET /static/css/charts.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:46:37] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:46:37] "GET /static/css/style.css HTTP/1.1" 200 -
+[2024-12-09 21:46:37] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:46:37] "[36mGET /static/css/table.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:46:37] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:46:37] "[36mGET /static/css/filters.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:46:37] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:46:37] "[36mGET /static/js/chart-utils.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:46:37] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:46:37] "[36mGET /static/js/color-palette.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:46:37] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:46:37] "[36mGET /static/js/table.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:46:37] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:46:37] "[36mGET /static/js/data.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:46:37] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:46:37] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:46:37] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:46:37] "[36mGET /static/js/filters.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:46:37] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:46:37] "[36mGET /static/js/updater.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:46:37] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:46:37] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:46:37] INFO     [__main__:get_data:140] === Iniciando carregamento de dados via API ===
+[2024-12-09 21:46:37] INFO     [__main__:get_data:142] Inicializando Google Sheets Client
+[2024-12-09 21:46:37] INFO     [src.core.sheets_client:__init__:30] === Inicializando Google Sheets Client ===
+[2024-12-09 21:46:37] INFO     [src.core.sheets_client:__init__:35] ********{'credentials_path': 'credentials.json', 'sheet_url': None, 'scopes': ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive'], 'default_range': 'Sheet1!A1:Z1000', 'update_interval': 300, 'timezone': zoneinfo.ZoneInfo(key='America/Sao_Paulo'), 'date_format': '%d/%m/%Y %H:%M:%S', 'default_start_time': '00:00:00', 'default_end_time': '23:59:59.999999'}
+[2024-12-09 21:46:37] INFO     [src.core.sheets_client:__init__:36] Configurações carregadas:
+[2024-12-09 21:46:37] INFO     [src.core.sheets_client:__init__:39] credentials_path: credentials.json
+[2024-12-09 21:46:37] INFO     [src.core.sheets_client:__init__:39] sheet_url: None
+[2024-12-09 21:46:37] INFO     [src.core.sheets_client:__init__:39] default_range: Sheet1!A1:Z1000
+[2024-12-09 21:46:37] INFO     [src.core.sheets_client:__init__:39] update_interval: 300
+[2024-12-09 21:46:37] INFO     [src.core.sheets_client:__init__:39] timezone: America/Sao_Paulo
+[2024-12-09 21:46:37] INFO     [src.core.sheets_client:__init__:39] date_format: %d/%m/%Y %H:%M:%S
+[2024-12-09 21:46:37] INFO     [src.core.sheets_client:__init__:39] default_start_time: 00:00:00
+[2024-12-09 21:46:37] INFO     [src.core.sheets_client:__init__:39] default_end_time: 23:59:59.999999
+[2024-12-09 21:46:37] INFO     [src.core.sheets_client:_get_credentials:60] Tentando carregar credenciais de: credentials.json
+[2024-12-09 21:46:37] INFO     [src.core.sheets_client:_get_credentials:71] ✓ Arquivo de credenciais lido: 2406 bytes
+[2024-12-09 21:46:37] INFO     [src.core.sheets_client:_get_credentials:76] ✓ Conteúdo do arquivo é um JSON válido
+[2024-12-09 21:46:37] INFO     [src.core.sheets_client:_get_credentials:86] ✓ Todos os campos obrigatórios presentes
+[2024-12-09 21:46:37] INFO     [src.core.sheets_client:_get_credentials:102] ✓ Credenciais carregadas com sucesso
+[2024-12-09 21:46:37] INFO     [src.core.sheets_client:_create_service:114] Criando serviço do Google Sheets
+[2024-12-09 21:46:37] INFO     [googleapiclient.discovery_cache:autodetect:49] file_cache is only supported with oauth2client<4.0.0
+[2024-12-09 21:46:37] INFO     [src.core.sheets_client:_create_service:116] ✓ Serviço do Google Sheets criado com sucesso
+[2024-12-09 21:46:37] ERROR    [src.core.sheets_client:_extract_spreadsheet_id:136] ✗ Erro ao extrair ID da planilha: 'NoneType' object has no attribute 'split'
+[2024-12-09 21:46:37] ERROR    [src.core.sheets_client:_extract_spreadsheet_id:137] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 127, in _extract_spreadsheet_id
+    spreadsheet_id = self.config["sheet_url"].split('/')[5]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+[2024-12-09 21:46:37] ERROR    [src.core.sheets_client:__init__:49] Erro ao inicializar GoogleSheetsClient:
+[2024-12-09 21:46:37] ERROR    [src.core.sheets_client:__init__:50] Tipo do erro: AttributeError
+[2024-12-09 21:46:37] ERROR    [src.core.sheets_client:__init__:51] Mensagem: 'NoneType' object has no attribute 'split'
+[2024-12-09 21:46:37] ERROR    [src.core.sheets_client:__init__:52] Stack trace:
+[2024-12-09 21:46:37] ERROR    [src.core.sheets_client:__init__:53] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 44, in __init__
+    self.spreadsheet_id = self._extract_spreadsheet_id()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 127, in _extract_spreadsheet_id
+    spreadsheet_id = self.config["sheet_url"].split('/')[5]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+[2024-12-09 21:46:37] ERROR    [__main__:get_data:147] ✗ Erro ao inicializar Google Sheets Client
+[2024-12-09 21:46:37] ERROR    [__main__:get_data:148] Detalhes do erro: 'NoneType' object has no attribute 'split'
+[2024-12-09 21:46:37] ERROR    [__main__:get_data:149] Stack trace:
+[2024-12-09 21:46:37] ERROR    [__main__:get_data:150] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/app.py", line 144, in get_data
+    sheets_client = GoogleSheetsClient()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 44, in __init__
+    self.spreadsheet_id = self._extract_spreadsheet_id()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 127, in _extract_spreadsheet_id
+    spreadsheet_id = self.config["sheet_url"].split('/')[5]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+[2024-12-09 21:46:37] ERROR    [__main__:get_data:184] === Erro na rota /api/data ===
+[2024-12-09 21:46:37] ERROR    [__main__:get_data:185] Tipo do erro: AttributeError
+[2024-12-09 21:46:37] ERROR    [__main__:get_data:186] Mensagem do erro: 'NoneType' object has no attribute 'split'
+[2024-12-09 21:46:37] ERROR    [__main__:get_data:187] Stack trace completo:
+[2024-12-09 21:46:37] ERROR    [__main__:get_data:188] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/app.py", line 144, in get_data
+    sheets_client = GoogleSheetsClient()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 44, in __init__
+    self.spreadsheet_id = self._extract_spreadsheet_id()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 127, in _extract_spreadsheet_id
+    spreadsheet_id = self.config["sheet_url"].split('/')[5]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+[2024-12-09 21:46:37] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:46:37] "[35m[1mGET /api/data HTTP/1.1[0m" 500 -
+[2024-12-09 21:49:44] INFO     [__main__:<module>:19] === Iniciando Aplicação ===
+[2024-12-09 21:49:44] INFO     [__main__:<module>:20] Working Directory: /home/danilo/Camilo/camiloTask
+[2024-12-09 21:49:44] INFO     [__main__:<module>:23] === Configurações do Ambiente ===
+[2024-12-09 21:49:44] INFO     [__main__:<module>:24] Sistema Operacional: posix
+[2024-12-09 21:49:44] INFO     [__main__:<module>:25] Plataforma: linux
+[2024-12-09 21:49:44] INFO     [__main__:<module>:26] Versão Python: 3.12.3 (main, Nov  6 2024, 18:32:19) [GCC 13.2.0]
+[2024-12-09 21:49:44] INFO     [__main__:<module>:27] Encoding do Sistema: utf-8
+[2024-12-09 21:49:44] INFO     [__main__:<module>:38] === Variáveis de Ambiente ===
+[2024-12-09 21:49:44] INFO     [__main__:<module>:40] PYTHONPATH: não definido
+[2024-12-09 21:49:44] INFO     [__main__:<module>:40] FLASK_DEBUG: não definido
+[2024-12-09 21:49:44] INFO     [__main__:<module>:40] FLASK_APP: não definido
+[2024-12-09 21:49:44] INFO     [__main__:<module>:40] FLASK_ENV: não definido
+[2024-12-09 21:49:44] INFO     [__main__:<module>:40] GOOGLE_CREDENTIALS_PATH: não definido
+[2024-12-09 21:49:44] ERROR    [__main__:<module>:83] ✗ GOOGLE_CREDENTIALS_PATH não definido no arquivo .env
+[2024-12-09 21:49:44] ERROR    [__main__:<module>:109] ✗ PYTHONPATH não definido no arquivo .env
+[2024-12-09 21:49:44] INFO     [__main__:<module>:118] Debug mode: False
+[2024-12-09 21:49:44] INFO     [__main__:<module>:200] Iniciando servidor Flask em 0.0.0.0:5002
+[2024-12-09 21:49:44] INFO     [__main__:<module>:201] Debug mode: False
+[2024-12-09 21:49:44] INFO     [werkzeug:_log:97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.15.8:5002
+[2024-12-09 21:49:44] INFO     [werkzeug:_log:97] [33mPress CTRL+C to quit[0m
+[2024-12-09 21:49:49] INFO     [__main__:index:126] Iniciando carregamento do dashboard
+[2024-12-09 21:49:49] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:49:49] "GET / HTTP/1.1" 200 -
+[2024-12-09 21:49:49] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:49:49] "[36mGET /static/css/table.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:49:49] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:49:49] "[36mGET /static/css/filters.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:49:49] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:49:49] "[36mGET /static/css/charts.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:49:49] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:49:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:49:49] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:49:49] "[36mGET /static/js/color-palette.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:49:49] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:49:49] "[36mGET /static/js/chart-utils.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:49:49] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:49:49] "[36mGET /static/js/data.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:49:49] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:49:49] "[36mGET /static/js/table.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:49:49] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:49:49] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:49:49] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:49:49] "[36mGET /static/js/filters.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:49:49] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:49:49] "[36mGET /static/js/updater.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:49:49] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:49:49] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:49:49] INFO     [__main__:get_data:140] === Iniciando carregamento de dados via API ===
+[2024-12-09 21:49:49] INFO     [__main__:get_data:142] Inicializando Google Sheets Client
+[2024-12-09 21:49:49] INFO     [src.core.sheets_client:__init__:30] === Inicializando Google Sheets Client ===
+[2024-12-09 21:49:49] INFO     [src.core.sheets_client:__init__:37] ********{'credentials_path': 'credentials.json', 'sheet_url': None, 'scopes': ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive'], 'default_range': 'Sheet1!A1:Z1000', 'update_interval': 300, 'timezone': zoneinfo.ZoneInfo(key='America/Sao_Paulo'), 'date_format': '%d/%m/%Y %H:%M:%S', 'default_start_time': '00:00:00', 'default_end_time': '23:59:59.999999'}
+[2024-12-09 21:49:49] INFO     [src.core.sheets_client:__init__:38] Configurações carregadas:
+[2024-12-09 21:49:49] INFO     [src.core.sheets_client:__init__:41] credentials_path: credentials.json
+[2024-12-09 21:49:49] INFO     [src.core.sheets_client:__init__:41] sheet_url: None
+[2024-12-09 21:49:49] INFO     [src.core.sheets_client:__init__:41] default_range: Sheet1!A1:Z1000
+[2024-12-09 21:49:49] INFO     [src.core.sheets_client:__init__:41] update_interval: 300
+[2024-12-09 21:49:49] INFO     [src.core.sheets_client:__init__:41] timezone: America/Sao_Paulo
+[2024-12-09 21:49:49] INFO     [src.core.sheets_client:__init__:41] date_format: %d/%m/%Y %H:%M:%S
+[2024-12-09 21:49:49] INFO     [src.core.sheets_client:__init__:41] default_start_time: 00:00:00
+[2024-12-09 21:49:49] INFO     [src.core.sheets_client:__init__:41] default_end_time: 23:59:59.999999
+[2024-12-09 21:49:49] INFO     [src.core.sheets_client:_get_credentials:62] Tentando carregar credenciais de: credentials.json
+[2024-12-09 21:49:49] INFO     [src.core.sheets_client:_get_credentials:73] ✓ Arquivo de credenciais lido: 2406 bytes
+[2024-12-09 21:49:49] INFO     [src.core.sheets_client:_get_credentials:78] ✓ Conteúdo do arquivo é um JSON válido
+[2024-12-09 21:49:49] INFO     [src.core.sheets_client:_get_credentials:88] ✓ Todos os campos obrigatórios presentes
+[2024-12-09 21:49:49] INFO     [src.core.sheets_client:_get_credentials:104] ✓ Credenciais carregadas com sucesso
+[2024-12-09 21:49:49] INFO     [src.core.sheets_client:_create_service:116] Criando serviço do Google Sheets
+[2024-12-09 21:49:49] INFO     [googleapiclient.discovery_cache:autodetect:49] file_cache is only supported with oauth2client<4.0.0
+[2024-12-09 21:49:49] INFO     [src.core.sheets_client:_create_service:118] ✓ Serviço do Google Sheets criado com sucesso
+[2024-12-09 21:49:49] ERROR    [src.core.sheets_client:_extract_spreadsheet_id:138] ✗ Erro ao extrair ID da planilha: 'NoneType' object has no attribute 'split'
+[2024-12-09 21:49:49] ERROR    [src.core.sheets_client:_extract_spreadsheet_id:139] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 129, in _extract_spreadsheet_id
+    spreadsheet_id = self.config["sheet_url"].split('/')[5]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+[2024-12-09 21:49:49] ERROR    [src.core.sheets_client:__init__:51] Erro ao inicializar GoogleSheetsClient:
+[2024-12-09 21:49:49] ERROR    [src.core.sheets_client:__init__:52] Tipo do erro: AttributeError
+[2024-12-09 21:49:49] ERROR    [src.core.sheets_client:__init__:53] Mensagem: 'NoneType' object has no attribute 'split'
+[2024-12-09 21:49:49] ERROR    [src.core.sheets_client:__init__:54] Stack trace:
+[2024-12-09 21:49:49] ERROR    [src.core.sheets_client:__init__:55] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 46, in __init__
+    self.spreadsheet_id = self._extract_spreadsheet_id()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 129, in _extract_spreadsheet_id
+    spreadsheet_id = self.config["sheet_url"].split('/')[5]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+[2024-12-09 21:49:49] ERROR    [__main__:get_data:147] ✗ Erro ao inicializar Google Sheets Client
+[2024-12-09 21:49:49] ERROR    [__main__:get_data:148] Detalhes do erro: 'NoneType' object has no attribute 'split'
+[2024-12-09 21:49:49] ERROR    [__main__:get_data:149] Stack trace:
+[2024-12-09 21:49:49] ERROR    [__main__:get_data:150] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/app.py", line 144, in get_data
+    sheets_client = GoogleSheetsClient()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 46, in __init__
+    self.spreadsheet_id = self._extract_spreadsheet_id()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 129, in _extract_spreadsheet_id
+    spreadsheet_id = self.config["sheet_url"].split('/')[5]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+[2024-12-09 21:49:49] ERROR    [__main__:get_data:184] === Erro na rota /api/data ===
+[2024-12-09 21:49:49] ERROR    [__main__:get_data:185] Tipo do erro: AttributeError
+[2024-12-09 21:49:49] ERROR    [__main__:get_data:186] Mensagem do erro: 'NoneType' object has no attribute 'split'
+[2024-12-09 21:49:49] ERROR    [__main__:get_data:187] Stack trace completo:
+[2024-12-09 21:49:49] ERROR    [__main__:get_data:188] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/app.py", line 144, in get_data
+    sheets_client = GoogleSheetsClient()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 46, in __init__
+    self.spreadsheet_id = self._extract_spreadsheet_id()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 129, in _extract_spreadsheet_id
+    spreadsheet_id = self.config["sheet_url"].split('/')[5]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+[2024-12-09 21:49:49] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:49:49] "[35m[1mGET /api/data HTTP/1.1[0m" 500 -
+[2024-12-09 21:50:48] INFO     [__main__:<module>:19] === Iniciando Aplicação ===
+[2024-12-09 21:50:48] INFO     [__main__:<module>:20] Working Directory: /home/danilo/Camilo/camiloTask
+[2024-12-09 21:50:48] INFO     [__main__:<module>:23] === Configurações do Ambiente ===
+[2024-12-09 21:50:48] INFO     [__main__:<module>:24] Sistema Operacional: posix
+[2024-12-09 21:50:48] INFO     [__main__:<module>:25] Plataforma: linux
+[2024-12-09 21:50:48] INFO     [__main__:<module>:26] Versão Python: 3.12.3 (main, Nov  6 2024, 18:32:19) [GCC 13.2.0]
+[2024-12-09 21:50:48] INFO     [__main__:<module>:27] Encoding do Sistema: utf-8
+[2024-12-09 21:50:48] INFO     [__main__:<module>:38] === Variáveis de Ambiente ===
+[2024-12-09 21:50:48] INFO     [__main__:<module>:40] PYTHONPATH: não definido
+[2024-12-09 21:50:48] INFO     [__main__:<module>:40] FLASK_DEBUG: não definido
+[2024-12-09 21:50:48] INFO     [__main__:<module>:40] FLASK_APP: não definido
+[2024-12-09 21:50:48] INFO     [__main__:<module>:40] FLASK_ENV: não definido
+[2024-12-09 21:50:48] INFO     [__main__:<module>:40] GOOGLE_CREDENTIALS_PATH: não definido
+[2024-12-09 21:50:48] ERROR    [__main__:<module>:83] ✗ GOOGLE_CREDENTIALS_PATH não definido no arquivo .env
+[2024-12-09 21:50:48] ERROR    [__main__:<module>:109] ✗ PYTHONPATH não definido no arquivo .env
+[2024-12-09 21:50:48] INFO     [__main__:<module>:118] Debug mode: False
+[2024-12-09 21:50:48] INFO     [__main__:<module>:200] Iniciando servidor Flask em 0.0.0.0:5002
+[2024-12-09 21:50:48] INFO     [__main__:<module>:201] Debug mode: False
+[2024-12-09 21:50:48] INFO     [werkzeug:_log:97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.15.8:5002
+[2024-12-09 21:50:48] INFO     [werkzeug:_log:97] [33mPress CTRL+C to quit[0m
+[2024-12-09 21:50:51] INFO     [__main__:index:126] Iniciando carregamento do dashboard
+[2024-12-09 21:50:51] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:50:51] "GET / HTTP/1.1" 200 -
+[2024-12-09 21:50:51] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:50:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:50:51] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:50:51] "[36mGET /static/css/charts.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:50:51] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:50:51] "[36mGET /static/css/table.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:50:51] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:50:51] "[36mGET /static/css/filters.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:50:51] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:50:51] "[36mGET /static/js/chart-utils.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:50:51] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:50:51] "[36mGET /static/js/color-palette.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:50:51] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:50:51] "[36mGET /static/js/data.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:50:51] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:50:51] "[36mGET /static/js/table.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:50:51] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:50:51] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:50:51] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:50:51] "[36mGET /static/js/filters.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:50:51] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:50:51] "[36mGET /static/js/updater.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:50:51] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:50:51] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:50:52] INFO     [__main__:get_data:140] === Iniciando carregamento de dados via API ===
+[2024-12-09 21:50:52] INFO     [__main__:get_data:142] Inicializando Google Sheets Client
+[2024-12-09 21:50:52] INFO     [src.core.sheets_client:__init__:30] === Inicializando Google Sheets Client ===
+[2024-12-09 21:50:52] INFO     [src.core.sheets_client:__init__:37] ********{'credentials_path': 'credentials.json', 'sheet_url': None, 'scopes': ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive'], 'default_range': 'Sheet1!A1:Z1000', 'update_interval': 300, 'timezone': zoneinfo.ZoneInfo(key='America/Sao_Paulo'), 'date_format': '%d/%m/%Y %H:%M:%S', 'default_start_time': '00:00:00', 'default_end_time': '23:59:59.999999'}
+[2024-12-09 21:50:52] INFO     [src.core.sheets_client:__init__:38] Configurações carregadas:
+[2024-12-09 21:50:52] INFO     [src.core.sheets_client:__init__:41] credentials_path: credentials.json
+[2024-12-09 21:50:52] INFO     [src.core.sheets_client:__init__:41] sheet_url: None
+[2024-12-09 21:50:52] INFO     [src.core.sheets_client:__init__:41] default_range: Sheet1!A1:Z1000
+[2024-12-09 21:50:52] INFO     [src.core.sheets_client:__init__:41] update_interval: 300
+[2024-12-09 21:50:52] INFO     [src.core.sheets_client:__init__:41] timezone: America/Sao_Paulo
+[2024-12-09 21:50:52] INFO     [src.core.sheets_client:__init__:41] date_format: %d/%m/%Y %H:%M:%S
+[2024-12-09 21:50:52] INFO     [src.core.sheets_client:__init__:41] default_start_time: 00:00:00
+[2024-12-09 21:50:52] INFO     [src.core.sheets_client:__init__:41] default_end_time: 23:59:59.999999
+[2024-12-09 21:50:52] INFO     [src.core.sheets_client:_get_credentials:62] Tentando carregar credenciais de: credentials.json
+[2024-12-09 21:50:52] INFO     [src.core.sheets_client:_get_credentials:73] ✓ Arquivo de credenciais lido: 2406 bytes
+[2024-12-09 21:50:52] INFO     [src.core.sheets_client:_get_credentials:78] ✓ Conteúdo do arquivo é um JSON válido
+[2024-12-09 21:50:52] INFO     [src.core.sheets_client:_get_credentials:88] ✓ Todos os campos obrigatórios presentes
+[2024-12-09 21:50:52] INFO     [src.core.sheets_client:_get_credentials:104] ✓ Credenciais carregadas com sucesso
+[2024-12-09 21:50:52] INFO     [src.core.sheets_client:_create_service:116] Criando serviço do Google Sheets
+[2024-12-09 21:50:52] INFO     [googleapiclient.discovery_cache:autodetect:49] file_cache is only supported with oauth2client<4.0.0
+[2024-12-09 21:50:52] INFO     [src.core.sheets_client:_create_service:118] ✓ Serviço do Google Sheets criado com sucesso
+[2024-12-09 21:50:52] ERROR    [src.core.sheets_client:_extract_spreadsheet_id:138] ✗ Erro ao extrair ID da planilha: 'NoneType' object has no attribute 'split'
+[2024-12-09 21:50:52] ERROR    [src.core.sheets_client:_extract_spreadsheet_id:139] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 129, in _extract_spreadsheet_id
+    spreadsheet_id = self.config["sheet_url"].split('/')[5]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+[2024-12-09 21:50:52] ERROR    [src.core.sheets_client:__init__:51] Erro ao inicializar GoogleSheetsClient:
+[2024-12-09 21:50:52] ERROR    [src.core.sheets_client:__init__:52] Tipo do erro: AttributeError
+[2024-12-09 21:50:52] ERROR    [src.core.sheets_client:__init__:53] Mensagem: 'NoneType' object has no attribute 'split'
+[2024-12-09 21:50:52] ERROR    [src.core.sheets_client:__init__:54] Stack trace:
+[2024-12-09 21:50:52] ERROR    [src.core.sheets_client:__init__:55] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 46, in __init__
+    self.spreadsheet_id = self._extract_spreadsheet_id()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 129, in _extract_spreadsheet_id
+    spreadsheet_id = self.config["sheet_url"].split('/')[5]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+[2024-12-09 21:50:52] ERROR    [__main__:get_data:147] ✗ Erro ao inicializar Google Sheets Client
+[2024-12-09 21:50:52] ERROR    [__main__:get_data:148] Detalhes do erro: 'NoneType' object has no attribute 'split'
+[2024-12-09 21:50:52] ERROR    [__main__:get_data:149] Stack trace:
+[2024-12-09 21:50:52] ERROR    [__main__:get_data:150] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/app.py", line 144, in get_data
+    sheets_client = GoogleSheetsClient()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 46, in __init__
+    self.spreadsheet_id = self._extract_spreadsheet_id()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 129, in _extract_spreadsheet_id
+    spreadsheet_id = self.config["sheet_url"].split('/')[5]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+[2024-12-09 21:50:52] ERROR    [__main__:get_data:184] === Erro na rota /api/data ===
+[2024-12-09 21:50:52] ERROR    [__main__:get_data:185] Tipo do erro: AttributeError
+[2024-12-09 21:50:52] ERROR    [__main__:get_data:186] Mensagem do erro: 'NoneType' object has no attribute 'split'
+[2024-12-09 21:50:52] ERROR    [__main__:get_data:187] Stack trace completo:
+[2024-12-09 21:50:52] ERROR    [__main__:get_data:188] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/app.py", line 144, in get_data
+    sheets_client = GoogleSheetsClient()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 46, in __init__
+    self.spreadsheet_id = self._extract_spreadsheet_id()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 129, in _extract_spreadsheet_id
+    spreadsheet_id = self.config["sheet_url"].split('/')[5]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+[2024-12-09 21:50:52] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:50:52] "[35m[1mGET /api/data HTTP/1.1[0m" 500 -
+[2024-12-09 21:53:48] INFO     [__main__:<module>:19] === Iniciando Aplicação ===
+[2024-12-09 21:53:48] INFO     [__main__:<module>:20] Working Directory: /home/danilo/Camilo/camiloTask
+[2024-12-09 21:53:48] INFO     [__main__:<module>:23] === Configurações do Ambiente ===
+[2024-12-09 21:53:48] INFO     [__main__:<module>:24] Sistema Operacional: posix
+[2024-12-09 21:53:48] INFO     [__main__:<module>:25] Plataforma: linux
+[2024-12-09 21:53:48] INFO     [__main__:<module>:26] Versão Python: 3.12.3 (main, Nov  6 2024, 18:32:19) [GCC 13.2.0]
+[2024-12-09 21:53:48] INFO     [__main__:<module>:27] Encoding do Sistema: utf-8
+[2024-12-09 21:53:48] INFO     [__main__:<module>:38] === Variáveis de Ambiente ===
+[2024-12-09 21:53:48] INFO     [__main__:<module>:40] PYTHONPATH: não definido
+[2024-12-09 21:53:48] INFO     [__main__:<module>:40] FLASK_DEBUG: não definido
+[2024-12-09 21:53:48] INFO     [__main__:<module>:40] FLASK_APP: não definido
+[2024-12-09 21:53:48] INFO     [__main__:<module>:40] FLASK_ENV: não definido
+[2024-12-09 21:53:48] INFO     [__main__:<module>:40] GOOGLE_CREDENTIALS_PATH: não definido
+[2024-12-09 21:53:48] ERROR    [__main__:<module>:83] ✗ GOOGLE_CREDENTIALS_PATH não definido no arquivo .env
+[2024-12-09 21:53:48] ERROR    [__main__:<module>:109] ✗ PYTHONPATH não definido no arquivo .env
+[2024-12-09 21:53:48] INFO     [__main__:<module>:118] Debug mode: False
+[2024-12-09 21:53:48] INFO     [__main__:<module>:200] Iniciando servidor Flask em 0.0.0.0:5002
+[2024-12-09 21:53:48] INFO     [__main__:<module>:201] Debug mode: False
+[2024-12-09 21:53:48] INFO     [werkzeug:_log:97] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.15.8:5002
+[2024-12-09 21:53:48] INFO     [werkzeug:_log:97] [33mPress CTRL+C to quit[0m
+[2024-12-09 21:53:51] INFO     [__main__:index:126] Iniciando carregamento do dashboard
+[2024-12-09 21:53:51] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:53:51] "GET / HTTP/1.1" 200 -
+[2024-12-09 21:53:51] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:53:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:53:51] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:53:51] "[36mGET /static/css/table.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:53:51] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:53:51] "[36mGET /static/css/charts.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:53:51] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:53:51] "[36mGET /static/css/filters.css HTTP/1.1[0m" 304 -
+[2024-12-09 21:53:51] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:53:51] "[36mGET /static/js/chart-utils.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:53:51] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:53:51] "[36mGET /static/js/color-palette.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:53:51] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:53:51] "[36mGET /static/js/data.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:53:51] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:53:51] "[36mGET /static/js/table.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:53:51] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:53:51] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:53:51] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:53:51] "[36mGET /static/js/filters.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:53:51] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:53:51] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:53:51] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:53:51] "[36mGET /static/js/updater.js HTTP/1.1[0m" 304 -
+[2024-12-09 21:53:51] INFO     [__main__:get_data:140] === Iniciando carregamento de dados via API ===
+[2024-12-09 21:53:51] INFO     [__main__:get_data:142] Inicializando Google Sheets Client
+[2024-12-09 21:53:51] INFO     [src.core.sheets_client:__init__:30] === Inicializando Google Sheets Client ===
+[2024-12-09 21:53:51] INFO     [src.core.sheets_client:__init__:37] ********{'credentials_path': 'credentials.json', 'sheet_url': None, 'scopes': ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive'], 'default_range': 'Sheet1!A1:Z1000', 'update_interval': 300, 'timezone': zoneinfo.ZoneInfo(key='America/Sao_Paulo'), 'date_format': '%d/%m/%Y %H:%M:%S', 'default_start_time': '00:00:00', 'default_end_time': '23:59:59.999999'}
+[2024-12-09 21:53:51] INFO     [src.core.sheets_client:__init__:38] Configurações carregadas:
+[2024-12-09 21:53:51] INFO     [src.core.sheets_client:__init__:41] credentials_path: credentials.json
+[2024-12-09 21:53:51] INFO     [src.core.sheets_client:__init__:41] sheet_url: None
+[2024-12-09 21:53:51] INFO     [src.core.sheets_client:__init__:41] default_range: Sheet1!A1:Z1000
+[2024-12-09 21:53:51] INFO     [src.core.sheets_client:__init__:41] update_interval: 300
+[2024-12-09 21:53:51] INFO     [src.core.sheets_client:__init__:41] timezone: America/Sao_Paulo
+[2024-12-09 21:53:51] INFO     [src.core.sheets_client:__init__:41] date_format: %d/%m/%Y %H:%M:%S
+[2024-12-09 21:53:51] INFO     [src.core.sheets_client:__init__:41] default_start_time: 00:00:00
+[2024-12-09 21:53:51] INFO     [src.core.sheets_client:__init__:41] default_end_time: 23:59:59.999999
+[2024-12-09 21:53:51] INFO     [src.core.sheets_client:_get_credentials:62] Tentando carregar credenciais de: credentials.json
+[2024-12-09 21:53:51] INFO     [src.core.sheets_client:_get_credentials:73] ✓ Arquivo de credenciais lido: 2406 bytes
+[2024-12-09 21:53:51] INFO     [src.core.sheets_client:_get_credentials:78] ✓ Conteúdo do arquivo é um JSON válido
+[2024-12-09 21:53:51] INFO     [src.core.sheets_client:_get_credentials:88] ✓ Todos os campos obrigatórios presentes
+[2024-12-09 21:53:51] INFO     [src.core.sheets_client:_get_credentials:104] ✓ Credenciais carregadas com sucesso
+[2024-12-09 21:53:51] INFO     [src.core.sheets_client:_create_service:116] Criando serviço do Google Sheets
+[2024-12-09 21:53:51] INFO     [googleapiclient.discovery_cache:autodetect:49] file_cache is only supported with oauth2client<4.0.0
+[2024-12-09 21:53:51] INFO     [src.core.sheets_client:_create_service:118] ✓ Serviço do Google Sheets criado com sucesso
+[2024-12-09 21:53:51] ERROR    [src.core.sheets_client:_extract_spreadsheet_id:138] ✗ Erro ao extrair ID da planilha: 'NoneType' object has no attribute 'split'
+[2024-12-09 21:53:51] ERROR    [src.core.sheets_client:_extract_spreadsheet_id:139] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 129, in _extract_spreadsheet_id
+    spreadsheet_id = self.config["sheet_url"].split('/')[5]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+[2024-12-09 21:53:51] ERROR    [src.core.sheets_client:__init__:51] Erro ao inicializar GoogleSheetsClient:
+[2024-12-09 21:53:51] ERROR    [src.core.sheets_client:__init__:52] Tipo do erro: AttributeError
+[2024-12-09 21:53:51] ERROR    [src.core.sheets_client:__init__:53] Mensagem: 'NoneType' object has no attribute 'split'
+[2024-12-09 21:53:51] ERROR    [src.core.sheets_client:__init__:54] Stack trace:
+[2024-12-09 21:53:51] ERROR    [src.core.sheets_client:__init__:55] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 46, in __init__
+    self.spreadsheet_id = self._extract_spreadsheet_id()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 129, in _extract_spreadsheet_id
+    spreadsheet_id = self.config["sheet_url"].split('/')[5]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+[2024-12-09 21:53:51] ERROR    [__main__:get_data:147] ✗ Erro ao inicializar Google Sheets Client
+[2024-12-09 21:53:51] ERROR    [__main__:get_data:148] Detalhes do erro: 'NoneType' object has no attribute 'split'
+[2024-12-09 21:53:51] ERROR    [__main__:get_data:149] Stack trace:
+[2024-12-09 21:53:51] ERROR    [__main__:get_data:150] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/app.py", line 144, in get_data
+    sheets_client = GoogleSheetsClient()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 46, in __init__
+    self.spreadsheet_id = self._extract_spreadsheet_id()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 129, in _extract_spreadsheet_id
+    spreadsheet_id = self.config["sheet_url"].split('/')[5]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+[2024-12-09 21:53:51] ERROR    [__main__:get_data:184] === Erro na rota /api/data ===
+[2024-12-09 21:53:51] ERROR    [__main__:get_data:185] Tipo do erro: AttributeError
+[2024-12-09 21:53:51] ERROR    [__main__:get_data:186] Mensagem do erro: 'NoneType' object has no attribute 'split'
+[2024-12-09 21:53:51] ERROR    [__main__:get_data:187] Stack trace completo:
+[2024-12-09 21:53:51] ERROR    [__main__:get_data:188] Traceback (most recent call last):
+  File "/home/danilo/Camilo/camiloTask/app.py", line 144, in get_data
+    sheets_client = GoogleSheetsClient()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 46, in __init__
+    self.spreadsheet_id = self._extract_spreadsheet_id()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/danilo/Camilo/camiloTask/src/core/sheets_client.py", line 129, in _extract_spreadsheet_id
+    spreadsheet_id = self.config["sheet_url"].split('/')[5]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
+
+[2024-12-09 21:53:51] INFO     [werkzeug:_log:97] 127.0.0.1 - - [09/Dec/2024 21:53:51] "[35m[1mGET /api/data HTTP/1.1[0m" 500 -

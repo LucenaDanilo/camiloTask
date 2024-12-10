@@ -32,6 +32,8 @@ class GoogleSheetsClient:
         try:
             # Carrega configurações
             self.config = GOOGLE_SHEETS_CONFIG
+            print(self)
+            print(self.config)
             logger.info(f"********{GOOGLE_SHEETS_CONFIG}")
             logger.info("Configurações carregadas:")
             for key, value in self.config.items():
