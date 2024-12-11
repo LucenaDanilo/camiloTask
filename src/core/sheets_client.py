@@ -32,7 +32,7 @@ class GoogleSheetsClient:
         try:
             # Carrega configurações
             self.config = GOOGLE_SHEETS_CONFIG
-            print(self)
+            print(type(self.config))
             print(self.config)
             logger.info(f"********{GOOGLE_SHEETS_CONFIG}")
             logger.info("Configurações carregadas:")
@@ -113,9 +113,20 @@ class GoogleSheetsClient:
     def _create_service(self):
         """Cria o serviço do Google Sheets."""
         try:
-            logger.info("Criando serviço do Google Sheets")
+            sheet_url = self.config.get("sheet_url")  # Use get para evitar erros se a chave não existir.
+            if not sheet_url:
+                raise ValueError("A chave 'sheet_url' está ausente ou é None.")
+        
+            # Divide a URL para obter o ID da planilha
+            spreadsheet_id = sheet_url.split('/')[5]
+            logger.info(f"✓ ID da planilha extraído com sucesso: {spreadsheet_id}")
+
+            # Aqui criamos o serviço usando as credenciais
             service = build('sheets', 'v4', credentials=self.credentials)
-            logger.info("✓ Serviço do Google Sheets criado com sucesso")
+            
+            # Armazene o spreadsheet_id em self.spreadsheet_id, ou faça isso em outro método.
+            self.spreadsheet_id = spreadsheet_id
+
             return service
         except Exception as e:
             logger.error(f"✗ Erro ao criar serviço do Google Sheets: {str(e)}")
@@ -123,17 +134,27 @@ class GoogleSheetsClient:
             logger.error(traceback.format_exc())
             raise
 
+
     def _extract_spreadsheet_id(self):
         """Extrai o ID da planilha da URL."""
         try:
-            spreadsheet_id = self.config["sheet_url"].split('/')[5]
+            # Tenta obter o valor da chave "sheet_url"
+            sheet_url = self.config.get("sheet_url")  # Usa get para evitar KeyError
+            if not sheet_url:
+                raise ValueError("A chave 'sheet_url' está ausente ou é None.")
+            
+            # Divide a URL para obter o ID da planilha
+            spreadsheet_id = sheet_url.split('/')[5]
+            print(f"Esse é o atual spread_sheet_id: {spreadsheet_id}")
             logger.info(f"✓ ID da planilha extraído com sucesso: {spreadsheet_id}")
             return spreadsheet_id
         except IndexError:
-            error_msg = f"✗ URL da planilha inválida: {self.config['sheet_url']}"
+            # Captura erros ao acessar índices fora dos limites da lista
+            error_msg = f"✗ URL da planilha inválida: {self.config.get('sheet_url', 'URL ausente')}"
             logger.error(error_msg)
             raise ValueError(error_msg)
         except Exception as e:
+            # Captura qualquer outro tipo de exceção
             error_msg = f"✗ Erro ao extrair ID da planilha: {str(e)}"
             logger.error(error_msg)
             logger.error(traceback.format_exc())

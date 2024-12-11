@@ -38,11 +38,11 @@ class DashboardDataManager {
             }
             
             const data = await response.json();
+            console.log("meu data foi inicializado ", data)
             if (!data || !data.registros) {
                 throw new Error('Dados inválidos recebidos do servidor');
             }
 
-            // Processa timestamps
             data.registros = data.registros.map(registro => ({
                 ...registro,
                 data_hora: this.processTimestamp(registro.data_hora)
@@ -56,7 +56,7 @@ class DashboardDataManager {
             return this.data;
 
         } catch (error) {
-            console.error('Erro ao carregar dados iniciais:', error);
+            console.error('Erro ao carregar dados iniciais:', error.message);
             if (loadingState) loadingState.classList.add('d-none');
             throw error;
         }

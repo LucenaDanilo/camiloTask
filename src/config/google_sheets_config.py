@@ -15,7 +15,7 @@ load_dotenv()
 # Configurações do Google Sheets
 GOOGLE_SHEETS_CONFIG = {
     "credentials_path": os.getenv('GOOGLE_CREDENTIALS_PATH'),
-    "sheet_url": "https://docs.google.com/spreadsheets/d/14Ra7VNhBaFVyBk3Y9w67AenAQJ58NvlY7tD8d9m_agM/edit?gid=0#gid=0",
+    "sheet_url": os.getenv('SHEET_URL'),
     "scopes": [
         "https://www.googleapis.com/auth/spreadsheets",
         "https://www.googleapis.com/auth/drive"
